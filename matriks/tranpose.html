@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>Transpos Matriks</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <img src="logonew.png" alt="logo" width="55" height="55" class="rounded-circle" />
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/index.html">Home Matriks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/soal.html">Soal-soal</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sub Materi Matriks</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/matriks/pengertian.html">1. Pengertian Matriks</a>
+                </li>
+                <li><a class="dropdown-item" href="/matriks/jenismatriks.html">2. Jenis Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/tranpose.html">3. Tranpose Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/duamatriks.html">4. Kesamaan Dua Matriks</a></li>
+                <li>
+                  <a class="dropdown-item" href="/matriks/operasimatriks.html"
+                    >5. Penjumlahan dan <br />
+                    Pengurangan Matriks</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="/matriks/perkalian.html">6. Perkalian Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/invers.html">8. Invers Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/penerapan.html">9. Penerapan Matriks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- start materi 1 -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md text-center">
+            <h3><b>Tranpose Suatu Matriks</b></h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md">
+            <p>Perhatikan matriks berikut!</p>
+            $$A=\begin{pmatrix}4&2 \\ -1&0 \\ 3&4 \end{pmatrix}$$
+
+            <p>
+              Dari matriks \(A\) ini dapat kita bentuk suatu matriks baru yang diperoleh dengan cara: 
+              <ol type="1">
+                <li>mengubah baris ke-<i>i</i> matriks \(A\) menjadi kolom ke-<i>i</i>
+                  matriks baru dan</li>
+                <li>mengubah kolom ke-<i>j</i> matriks \(A\) menjadi baris ke-<i>j</i> matriks baru.</li>
+              </ol>
+              Matriks baru yang dihasilkan ini disebut transpose dari matriks \(A\) yang dilambangkan dengan \(A'\) atau
+              \(A^t\). <br />
+              Dari perubahan di atas, apabila matriks \(A\) berordo \(m \times n\), maka \(A'\) adalah suatu matriks yang berordo \(n \times m\) <br />
+              Berdasarkan uraian di atas, maka transpose dari matriks \(A\), yaitu \(A'\) adalah:
+            </p>
+              $$A'=\begin{pmatrix}4&-1&3 \\ 2&0&4 \end{pmatrix}$$
+
+            <br />
+            Sifat-sifat tranpose suatu matriks :
+            <ol>
+              <li>\((A')'=A \)</li>
+              <li>\((A+B)'=A'+B' \)  </li>
+              <li>\(k(A')=(kA)' \) </li>
+              <li>\((AB)'=B'A'\) </li>
+              <li>Jika \(A\) adalah matriks simetris, maka \(A'=A\)</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+ 
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md border border-dark">
+          <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 3.1</div>
+          <ol type="1">
+            <li>
+              Tentukanlah transpos dari setiap matriks berikut
+              <div class="row">
+                <div class="col-md-4 overflow-auto">\(A=\begin{bmatrix}7&0&-5 \\ -2&1&4 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(B=\begin{bmatrix}8&1&6&0 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(C=\begin{bmatrix}1&3&-2 \\ -4&7&8\\0&2&5 \end{bmatrix}\)</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 overflow-auto">\(D=\begin{bmatrix}-2&3 \\ 6&0 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(E=\begin{bmatrix}3 \\ -4 \\ 11 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(F=\begin{bmatrix}3 \\ -1 \end{bmatrix}\)</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 overflow-auto">\(G=\begin{bmatrix}-2&3&2&3 \\ 6&0&3&0 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(H=\begin{bmatrix}3&2 \\ 1&-4 \\ 3&11 \end{bmatrix}\)</div>
+                <div class="col-md-4 overflow-auto">\(I=\begin{bmatrix}3 \\ -1 \\0\\3\\2\end{bmatrix}\)</div>
+              </div>
+            </li>
+
+            <li>Tuliskan 3 contoh matriks simetris.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- tombol bawah -->
+    <div class="container">
+      <div class="d-grid gap-2 d-md-block position-relative">
+        <a href="/matriks/jenismatriks.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Jenis-jenis Matriks</button></a>
+        <a href="/matriks/duamatriks.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Kesamaan Dua Matriks</button></a>
+      </div>
+    </div>
+   </section>
+    <!-- end tombol bawah -->
+
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white fixed-bottom">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

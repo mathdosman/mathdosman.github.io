@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WWKYNJM30L');
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Perkalian Matriks</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <img src="logonew.png" alt="logo" width="55" height="55" class="rounded-circle" />
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/index.html">Home Matriks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/soal.html">Soal-soal</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sub Materi Matriks</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/matriks/pengertian.html">1. Pengertian Matriks</a>
+                </li>
+                <li><a class="dropdown-item" href="/matriks/jenismatriks.html">2. Jenis Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/tranpose.html">3. Tranpose Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/duamatriks.html">4. Kesamaan Dua Matriks</a></li>
+                <li>
+                  <a class="dropdown-item" href="/matriks/operasimatriks.html"
+                    >5. Penjumlahan dan <br />
+                    Pengurangan Matriks</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="/matriks/perkalian.html">6. Perkalian Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/invers.html">8. Invers Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/penerapan.html">9. Penerapan Matriks</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- navbar end -->
+
+    <!-- start materi 1 -->
+    <section style="padding-bottom: 5rem">
+      <div class="container">
+        <h3 class="text-center">Perkalian Matriks</h3>
+        <b>1. Perkalian Skalar dengan suatu Matriks</b> <br />
+        Sebuah matriks dengan ordo <i>m x n</i> dapat dikalikan dengan sebuah bilangan real tertentu. Bilangan real ini selanjutnya disebut dengan <i>skalar.</i> <br />
+        Perhatikan definisi berikut.
+        <!-- card 1 -->
+        <div class="row justify-content-center">
+          <div class="card text-bg-light mb-3" style="max-width: 50rem">
+            <div class="card-header">Definisi</div>
+            <div class="card-body">
+              <p class="card-text fst-italic">
+                Misalnya \(k \in R\) dan \(A=(a_{ij})\) adalah suatu matriks yang berordo \(m \times n\). Perkalian bilangan real \(k\) dengan matriks \(A\) adalah suatu matriks baru yang juga berordo \(m \times n\) yang diperoleh dengan
+                mengalikan setiap elemen pada \(A\) dengan bilangan real \(k\) dan diberi notasi \(kA\) sedemikian sehingga \(kA=(ka_{ij})\).
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end card 1 -->
+        <!-- COntoh 6.1 -->
+        <div class="row justify-content-center">
+          <div class="col-md-9 border rounded-3 p-2">
+            <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 6.1 </b></div>
+            <br />
+            <br />
+            Jika \(A=\begin{pmatrix}-3&5&2 \\ 1&2&-4 \end{pmatrix}\), tentukan matriks yang diwakili oleh 2A.
+            <br />
+            <br />
+            <b>JAWAB</b> <br />
+            <div class="overflow-auto">
+              \(\begin{align} 2A &=2\begin{pmatrix}-3&5&2 \\ 1&2&-4 \end{pmatrix} \\ &= \begin{pmatrix} 2(-3)&2(5)&2(2) \\ 2(1)&2(2)&2(-4) \end{pmatrix} \\ &=\begin{pmatrix} -6&10&4 \\ 2&4&-8 \end{pmatrix} \end{align}\)
+            </div>
+          </div>
+        </div>
+        <!-- end contoh 6.1 -->
+        <!-- COntoh 6.1 -->
+        <div class="row justify-content-center">
+          <div class="col-md-9 border rounded-3 p-2">
+            <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 6.2 </b></div>
+
+            <p class="fst-italic">
+              DIketahui matriks-matriks \(A=\begin{pmatrix} 2&-3 \\ 1&4 \end{pmatrix}, B=\begin{pmatrix} 2&3 \\ 5&-1 \end{pmatrix} \) dan \(f(x,y)=3x-2y\). Tentukan: <br />
+              a. \(f(A,B)\) <br />
+              b. \(f(B,A)\)
+            </p>
+            <b>JAWAB</b> <br />
+            <div class="overflow-auto">
+              a. \( \begin{align} f(A, B) &= 3A-2B \\ &= 3 \begin{pmatrix} 2&-3 \\ 1&4 \end{pmatrix} -2 \begin{pmatrix} 2&3 \\ 5&-1 \end{pmatrix} \\ &= \begin{pmatrix} 6&-9 \\ 3&12 \end{pmatrix} - \begin{pmatrix} 4&6 \\ 10&-2 \end{pmatrix}
+              \\ &= \begin{pmatrix} 2&-15 \\ -7&14 \end{pmatrix} \end{align} \)
+            </div>
+            <div class="overflow-auto">
+              b. \( \begin{align} f(B, A) &= 3B-2A \\ &= 3 \begin{pmatrix} 2&3 \\ 5&-1 \end{pmatrix} -2 \begin{pmatrix} 2&-3 \\ 1&4 \end{pmatrix} \\ &= \begin{pmatrix} 6&9 \\ 15&-3 \end{pmatrix} - \begin{pmatrix} 4&-6 \\ 2&8 \end{pmatrix}
+              \\ &= \begin{pmatrix} 2&15 \\ 13&-11 \end{pmatrix} \end{align} \)
+            </div>
+          </div>
+        </div>
+        <!-- end contoh 6.2 -->
+        <p>Berdasarkan definisi perkalian matriks dengan skalar, maka dapat diambil kesimpulan tentang sifat-sifat perkalian matriks dengan skalar sebagai berikut.</p>
+        <i><b>Sifat-sifat Perkalian Matriks dengan Skalar</b></i> <br />
+        Jika \(k,l \in R\), matriks-matriks \(A=(a{ij})\) dan \(B=(b{ij})\) berordo <i>m \(\times\) n</i>, maka dalam perkalian matriks berlaku sifat-sifat berikut:
+        <ol type="a">
+          <li>\( (k+l)A=kA+lA\)</li>
+          <li>\( (k-l)A=kA-lA\)</li>
+          <li>\( k(BA)=(kB)A\)</li>
+          <li>\( k(lA)=(kl)A\)</li>
+        </ol>
+        <div class="row justify-content-center p-1">
+          <div class="col-md-10 border border-dark">
+            <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 6.1</div>
+            <ol>
+              <li>
+                Selesaikan perkalian matriks dengan skalar berikut.
+                <div class="row">
+                  <div class="col-md">a. \(2\begin{bmatrix} 3 \\ 1 \end{bmatrix}\)</div>
+                  <div class="col-md">b. \(-\frac{1}{3} \begin{bmatrix} 2&6 \\ 1&-3 \end{bmatrix}\)</div>
+                  <div class="col-md">c. \(-a\begin{bmatrix} -1&b \\ a&5 \end{bmatrix}\)</div>
+                </div>
+              </li>
+              <li>
+                Diketahui matriks-matriks: <br />
+                \(A=\begin{bmatrix} 2&1 \\ 3&-1 \end{bmatrix}\), \(B=\begin{bmatrix} -1&1 \\ 3&2 \end{bmatrix}\), \(C=\begin{bmatrix} 0&-1 \\ 1&-1 \end{bmatrix}\)
+                <br />
+                Tentukan bentuk yang paling sederhana dari matriks berikut. <br />
+                a. \(A-2B\) <br />
+                b. \(2A-B+3C\) <br />
+                c. \(\frac{1}{2}A-2B+\frac{1}{2}C \) <br />
+                d. \(2(A-B)-2(A+B)\) <br />
+              </li>
+              <li>Apabila \(P\) adalah matriks persegi berordo 2, selesaikan tiap persamaan berikut. <br>
+                \(\text{a. }-2P=\begin{bmatrix}4&0 \\ -2&2 \end{bmatrix}  \) <br>
+                \(\text{b. } 3P+\begin{bmatrix}1&3 \\ -2&5 \end{bmatrix}=\begin{bmatrix}4&0 \\ -8&-4 \end{bmatrix}  \) <br>
+                \(\text{c. } \begin{bmatrix}4&-1 \\ 3&2 \end{bmatrix}- \frac{1}{2} P=\begin{bmatrix}1&-2 \\ 0&3 \end{bmatrix}  \)
+              </li>
+              <!-- soal no 4 -->
+              <li>Diketahui matriks-matriks: <br>
+              \(A=\begin{bmatrix}4&-1 \\ -2&7 \end{bmatrix}\), \(B=\begin{bmatrix}-4&1 \\ 2&-7 \end{bmatrix}\), dan \(C=\begin{bmatrix}-8&a \\ b&-14 \end{bmatrix}\). Jika \(A+3B=C\), tentukan nilai \(2a-b\)
+              </li>
+              <!-- soal non 5 -->
+              <li> Diketahui matriks-matriks:
+               \(A=\begin{bmatrix} 3&1 \\ 2&4\end{bmatrix}\) \(B=\begin{bmatrix}0&1 \\ -2&2 \end{bmatrix}\), dan \(X\) matriks persegi berordo 2 yang memenuhi persamaan matriks: \(2A-B+X=O\). Tentukan matriks \(X\).</li>
+              <li>DIketahui persamaan matriks: <br>
+              \(\begin{bmatrix}x&-2 \\ -4&y \end{bmatrix}+2\begin{bmatrix}-1&3 \\ 4&x \end{bmatrix}=\begin{bmatrix}y&4 \\ 4&10 \end{bmatrix} \) tentukan nilai \(x\) dan \(y\) yang memenuhi persamaan tersebut.
+              </li>
+              <li>Diketahui persamaan matriks:
+                \(A=\begin{bmatrix}a&4 \\ 2b&3c \end{bmatrix} \) \(B=\begin{bmatrix}2c+3b & 2a+1 \\ a & b+7 \end{bmatrix} \), dan \(C=\begin{bmatrix}-11&6 \\ 4&-4 \end{bmatrix} \). Jika \(A-2B'=C\), tentukan nilai \(a,b\) dan \(c\).
+                 </li>
+            </ol>
+          </div>
+        </div>
+        <b>2. Perkalian Matriks dengan Matriks</b> <br />
+        <p>
+          Apabila matriks \(A=(a_{ij}\) adalah matriks yang berordo \(m \times n \) dan matriks \(B=(b_{ij})\) adalah matriks yang berordo \(q \times n\), maka perkalian matriks \(A\) dan \(B\) yang dinotasikan dengan \(AB\) dapat dilakukan
+          apabila \(p=q\). Hasil kali matriks \(AB\) didefinisikan sebagai matriks \(C=(c_{ij})\) yang berordo \(m \times n \) dengan elemen baris ke-<i>i</i> dan kolom ke-<i>j</i> adalah: 
+          <div class="overflow-auto">
+          $$c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+a_{i3}b_{3j}+
+          ... + a_{ip}b_{qn}$$ </div> dengan <i>i</i>=123, . . ., m dan <i>j</i>=1,2,3, ...,n
+        </p>
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card border-dark text-center">
+            <div class="card-header text-danger fw-bold">CATATAN</div>
+            <div class="card-body text-dark fst-italic">
+              \(a_{i1}b_{1j}\) adalah hasil kali elemen matriks \(A\) yang berada pada posisi baris ke-i kolom ke-1 dengan elemen matriks \(B\) yang berada pada posisi baris ke-1 kolom ke-j.
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- ---------------contoh -->
+        <div class="row justify-content-center">
+          <div class="col-md-9 border rounded-3 p-2">
+            <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 6.3 </b></div>
+            <p class="fst-italic">Diketahui \(A=\begin{pmatrix}2&3 \\ -1&2\end{pmatrix}\) dan \(B=\begin{pmatrix}-2 \\ -3 \end{pmatrix} \). <br />
+            a. Tentukanlah \(AB = BA\) <br />
+            b. Apakah \(AB=BA\)?</p>
+            <b>JAWAB</b> <br />
+            \(\begin{align}a. \:  AB &= \begin{pmatrix} 2&3 \\ -1&2 \end{pmatrix} \begin{pmatrix} -2 \\ -3 \end{pmatrix} \\ &= \begin{pmatrix} 2(-2)+3(-3) \\ (-1)(-2)+2(-3) \end{pmatrix} \\ &= \begin{pmatrix} -4&-9 \\ 2&-6
+            \end{pmatrix} \\ &= \begin{pmatrix} -13 \\ -4 \end{pmatrix} \end{align}\) <br />
+            Berdasar definisi perkalian matriks dengan matriks, perkalian \(BA\) tidak dapat diselesaikan karena banyaknya kolom dari matriks \(B\) tidak sama dengan banyaknya baris pada matriks \(A\). <br> <br>
+            b. Dari jawaban (a) diperoleh kesimpulan \(AB \ne BA\). <br> <br>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                <div class="card border-dark text-center">
+                    <div class="card-header text-danger fw-bold">CATATAN</div>
+                          <div class="card-body text-dark fst-italic">Perkalian dua matriks \(A\) dan \(B\) dapat dilakukan jika banyaknya kolom \(A\) sema dengan banyaknya baris pada \(B\)</div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <!-- -============================== -->
+        <div class="row justify-content-center">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header text-dark fw-bold fst-italic text-center">Sifat-sifat Perkalian Matriks</div>
+      <div class="card-body text-dark">
+        <ol>
+          <li>
+            \(AB \ne BA \), yaitu tidak berlaku sifat komutatif
+          </li>
+          <li>
+           Untuk sembarang \(k \in R, A=(a_{ij})\), dan \(B_{ij})\), maka 
+            <ol type="a">
+              <li>\((kA)B=k(AB)\)</li>
+              <li>\( (Ak)B=A(kB)\)</li>
+              <li>\( (AB)k=A(Bk) \)</li>
+            </ol>
+           
+          </li>
+          <li>
+            Untuk \(A=(a_{ij}), B=(b_{ij})\), dan \(C=(c_{ij})\) maka :
+            <ol type="a">
+              <li>\(A(BC)=(AB)C\), jika \(AB\) dan \(BC\) terdefinisikan.</li>
+              <li>\(A(B+C)=AB+AC\), jika \(AB, AC,\) dan \(B+C\) terdefinisikan.</li>
+              <li>\((A+B)C=AC+BC\), jika \(AC, BC,\) dan \(A+B\) terdefinisikan.</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-dark text-center">
+      <div class="card-header text-danger fw-bold">CATATAN</div>
+      <div class="card-body text-dark fst-italic">Jika \(A=(a_{ij}\) adalah matriks persegi, maka \(A^2\) diartikan \(A.A\) dengan cara yang sama, \(A^3\) diartikan \(A.A^2\), dan \(A^4\) diartikan \(A.A^3\) dan 
+        $$\begin{pmatrix} a&b \\c&d \end{pmatrix}^2 \ne \begin{pmatrix} a^2&b^2 \\c^2&d^2 \end{pmatrix}$$</div>
+    </div>
+  </div>
+</div>
+<div class="row p-2 justify-content-center">
+    <div class="col-md-9">
+      <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 6.4 </b></div>
+      <br />
+      <p class="fst-italic">
+        Jika \(A=\begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix}, B=\begin{pmatrix}2&1 \\ -3&5 \end{pmatrix}\) dan \( C=\begin{pmatrix}1&2 \\ 4&-1 \end{pmatrix}\)     
+        <br />
+        a. \((2A)B=A(2B)\) <br />
+        b. \(A(BC)=(AB)C\)
+      </p>
+      <br />
+
+      <b>JAWAB</b> <br />
+      
+        <div class="row">
+          <div class="col">
+            \(\begin{align} 
+              (2A)B &= \begin{bmatrix}2 \begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \end{bmatrix} \begin{pmatrix}2&1 \\ -3&5 \end{pmatrix} \\
+              &= \begin{pmatrix}-2&4 \\ 6&2 \end{pmatrix} \begin{pmatrix}2&1 \\ -3&5 \end{pmatrix} \\
+              &= \begin{pmatrix}-16&18 \\ 6&16 \end{pmatrix}
+              \end{align}\) 
+          </div>
+          <div class="col">\(\begin{align} 
+            A(2B) &= \begin{bmatrix}\begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \begin{pmatrix}2&1 \\ -3&5 \end{pmatrix}  \end{bmatrix} \\
+            &= \begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \begin{pmatrix}4&2 \\ -6&10 \end{pmatrix} \\
+            &= \begin{pmatrix}-16&18 \\ 6&16 \end{pmatrix}
+            \end{align}\)</div>
+        </div>
+        Jadi, \((2A)B=A(2B)\)
+        <div class="row mt-2">
+          <div class="col">
+            \(\begin{align} 
+              A(BC) 
+              &=\begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \begin{bmatrix} \begin{pmatrix}2&1 \\ -3&5 \end{pmatrix} 
+              \begin{pmatrix}1&2 \\ 4&-1 \end{pmatrix} \end{bmatrix} \\
+              &= \begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \begin{pmatrix}6&3 \\ 17&-11 \end{pmatrix} \\
+              &= \begin{pmatrix}28&-25 \\ 35&-2 \end{pmatrix}
+              \end{align}\) 
+              <br />
+          </div>
+          <div class="col"> \(\begin{align} 
+            (AB)C &= \begin{bmatrix} \begin{pmatrix}-1&2 \\ 3&1 \end{pmatrix} \begin{pmatrix}2&1 \\ -3&5 \end{pmatrix}  \end{bmatrix} \begin{pmatrix}1&2 \\ 4&-1 \end{pmatrix}\\
+            &= \begin{pmatrix}-8&9 \\ 3&8 \end{pmatrix} \begin{pmatrix}1&2 \\ 4&-1 \end{pmatrix} \\
+            &= \begin{pmatrix}28&-25 \\ 35&-2 \end{pmatrix}
+            \end{align}\) </div>
+        </div>
+        Jadi, \((A(BC)=(AB)C\)
+    
+      <br />
+    </div>
+  </div>
+  <!-- latihan perkalian -->
+          <div class="row justify-content-center p-1">
+          <div class="col-md-10 border border-dark">
+            <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 6.2</div>
+            <ol type="1">
+              <li>
+                Hitunglah bentuk perkalian matriks berikut!
+                <div class="row">
+                  <div class="col-md">
+                    a. \(\begin{pmatrix}2&-1 \end{pmatrix}\begin{pmatrix} -1\\3\end{pmatrix}\) <br>
+                    b. \(\begin{pmatrix}4&-2 \\ -3&2 \end{pmatrix}\begin{pmatrix} 5&-1 \\ 2&-3\end{pmatrix}\) <br>
+                    c. \(\begin{pmatrix}2&-1&3 \end{pmatrix}\begin{pmatrix} -1&3 \\ 2&1 \\ 3&2\end{pmatrix}\) <br>
+                    d. \(\begin{pmatrix}-3&2&-1 \\ 4&-1&2 \end{pmatrix}\begin{pmatrix} 2\\1\\-2\end{pmatrix}\) <br>
+                    e. \(\begin{pmatrix}-2&0&-5 \\ 7&2&-1 \end{pmatrix}\begin{pmatrix} -2&4 \\ 1&6 \\ 3&-2\end{pmatrix}\)
+                  </div>
+                  <div class="col-md">
+                    f. \(\begin{pmatrix}2&-1 \\ 3&-2 \end{pmatrix}\begin{pmatrix}-2 \\ -4 \end{pmatrix}\) <br>
+                    g. \(\begin{pmatrix}-1&4\end{pmatrix}\begin{pmatrix} 2&0 \\ -1&-2 \end{pmatrix}\) <br>
+                    h. \(\begin{pmatrix}2&-3 \\ 4&1 \end{pmatrix}\begin{pmatrix} -1&1&4\\3&2&1\end{pmatrix}\) <br>
+                    i. \(\begin{pmatrix}-3&5 \\ 7&-4 \end{pmatrix}\begin{pmatrix} -5&3&-1\\1&-2&4\end{pmatrix}\) <br>
+                    j. \(\begin{pmatrix}-2\\2\\-1\\3 \end{pmatrix}\begin{pmatrix} -2&4&2&1\end{pmatrix}\)
+                  </div>
+                </div>
+              </li>
+            </ol>
+            </div>
+          </div>
+        <!----container--  -->
+      </div>
+      <!-- tombol bawah -->
+    <div class="container">
+      <div class="d-grid gap-2 d-md-block position-relative">
+        <a href="/matriks/operasimatriks.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Operasi Matriks</button></a>
+        <a href="/matriks/invers.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Invers Matriks</button></a>
+      </div>
+    </div>
+    <!-- end tombol bawah -->
+
+   
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white fixed-bottom">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold"><i> I Putu Darma Putra</i></a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

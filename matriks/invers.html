@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Invers Matriks</title>
+    <style type="text/css">
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+      .justify {
+        text-align: justify;
+      }
+    </style>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <img src="logonew.png" alt="logo" width="55" height="55" class="rounded-circle" />
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/index.html">Home Matriks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/soal.html">Soal-soal</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sub Materi Matriks</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/matriks/pengertian.html">1. Pengertian Matriks</a>
+                </li>
+                <li><a class="dropdown-item" href="/matriks/jenismatriks.html">2. Jenis Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/tranpose.html">3. Tranpose Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/duamatriks.html">4. Kesamaan Dua Matriks</a></li>
+                <li>
+                  <a class="dropdown-item" href="/matriks/operasimatriks.html"
+                    >5. Penjumlahan dan <br />
+                    Pengurangan Matriks</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="/matriks/perkalian.html">6. Perkalian Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/invers.html">8. Invers Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/penerapan.html">9. Penerapan Matriks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- navbar end -->
+
+    <!-- start materi 1 -->
+    <section>
+      <div class="container text-center">
+        <h1>INVERS MATRIKS</h1>
+        <br />
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Sebelum membahas lebih lanjut tentang pengertian dari invers suatu matriks akan dibahas terlebih dahulu mengenai determinan suatu matriks.
+          <ol type="1">
+            <!-- start determinan ordo 2 -->
+            <li class="fw-bold">Determinan Matriks Persegi Berordo Dua</li>
+            Misalnya \(A\) adalah matriks berordo dua yang dituliskan dalam bentuk \(A=\begin{pmatrix} a&b \\ c&d \end{pmatrix} \), maka determinan matriks \(A\) adalah \(det A = |A|=\begin{vmatrix} a&b\\c&d \end{vmatrix}\)
+            <br />
+            <!-- contoh 7.1 -->
+            <div class="row p-2 justify-content-center">
+              <div class="col-md-9">
+                <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.1 </b></div>
+                <br />
+                <p class="fst-italic">
+                  Tentukan determinan matriks berikut! <br />
+                  a. \(A=\begin{pmatrix}2&-1\\3&4 \end{pmatrix}\) <br />
+                  b. \(C=\begin{pmatrix}a-1&-1\\2&a+1 \end{pmatrix}\)
+                </p>
+                <br />
+
+                <b>JAWAB</b> <br />
+                <div class="row">
+                  <div class="col-md-4">a. JIka \(A= \begin{pmatrix} 2&-1\\3&4\end{pmatrix}\), maka</div>
+                  <div class="col-md-4">\(\begin{align} det (A)) &= (2)(4)-(-1)(3) \\ &=8+3 \\&=11 \end{align} \)</div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-5">a. JIka \(C= \begin{pmatrix} a-1&-1\\2&a+1\end{pmatrix}\), maka</div>
+                  <div class="col-md-4">\(\begin{align} det (C)) &= (a-1)(a+1)-(-1)(2) \\ &=a^2-1+2 \\&=a^2+1 \end{align} \)</div>
+                </div>
+              </div>
+            </div>
+            <!-- contoh 7.2 -->
+            <div class="row p-2 justify-content-center">
+              <div class="col-md-9">
+                <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.2 </b></div>
+                <br />
+                <p class="fst-italic">
+                  Tentukan nilai \(x\) yang memenuhi persamaan \(\begin{vmatrix} 1-x&2 \\ 3&3-x \end{vmatrix}=2\) <br />
+                  <b>JAWAB</b> <br />
+                  \(\begin{align} \begin{vmatrix} 1-x&2 \\ 3&3-x \end{vmatrix} &= 2 \\ (1-x)(3-x)-(2)(3) &= 2 \\ 3-x-3x+x^2-6 &=2 \\ x^2-4x-5 &=0 \\ (x-5)(x+1) &= 0 \\ \end{align}\) <br />\(x=5\) atau \(x=-1\) <br />
+                  Jadi, diperoleh nilai \(x=-1\) atau \(x=5\)
+                </p>
+              </div>
+            </div>
+            <!-- end determinan ordo 2 -->
+
+            <!-- start determinan ordo 3 -->
+            <li class="fw-bold">Determinan Matriks Persegi Berordo Tiga</li>
+            <p style="text-indent: 0.5in">Determinan suatu matriks persegi berordo tiga dapat dilakukan dengan dua cara, yaitu dengan <i>metode fofaktor</i> dan <i>aturan Sarrus</i></p>
+            <ol type="a">
+              <i><li class="fw-bold">Metode Kofaktor</li></i>
+              1)
+              <i>Submatriks</i>
+              <br />
+              Matriks \(A\) dapat disebut sebagai submatriks dari matriks \(M\) jika \(A\) berasal dari matriks \(M\) yang dihilangkan beberapa elemen baris atau beberapa elemen kolomnya.
+              <br />
+              <!-- contoh 7.3 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.3 </b></div>
+                  <br />
+                  Jika \(M=\begin{pmatrix}-2&1 \\ 5&7 \\ 4&6 \end{pmatrix}\) dan \(A=\begin{pmatrix}-2&1 \\ 4&6 \end{pmatrix}\), maka matriks \(A\) disebut submatriks dari \(M\) karena \(A\) dapat diperoleh dari matriks \(M\) yang
+                  dihilangkan elemen baris kedua.
+                </div>
+              </div>
+              2)
+              <i>Minor</i
+              ><br />
+              Jika matriks \(A=a_{ij}\) matriks persegi, maka minor \(a{ij}\) adalah determinan dari matriks \(A\) yang sudah dihilangkan elemen baris ke-<i>i</i>
+              dan kolom ke-<i>j</i>.
+              <!-- contoh 7.4 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.4 </b></div>
+                  <br />
+                  <p class="fst-italic">Diketahui matriks \(A=\begin{pmatrix} 4&2&-1 \\ 0&5&3 \\ -2&1&1 \end{pmatrix}\). Tentukan minor \(a_{23}\) dan \(a_{12}\)</p>
+                  <b>JAWAB</b> <br />
+                  Untuk minor \(a_{23}\), hilangkan elemen baris kedua dan kolom ketiga, diperoleh minor \(a_{23}=\begin{vmatrix} 4&2 \\ -2&1 \end{vmatrix}\)\(=4.1-(-2).2=4+4=8 \) <br />
+                  Untuk minor \(a_{12}\) hilangkan elemen baris pertama dan kolom kedua, diperoleh minor \(a_{12}=\begin{vmatrix}0&3 \\ -2&1 \end{vmatrix}=0-(-6)=6. \)
+                </div>
+              </div>
+              3)
+              <i>Kofaktor dari</i>
+              <br />
+              <p style="text-indent: 0.5in">Jika matriks \(A=(a_{ij})\) matriks persegi maka kofaktor dari \(a_{ij}\) adalah \(K_{ij}=(-1)^{i+j} \times\) minor \(a_{ij}\)</p>
+              <!-- contoh 7.5 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.5 </b></div>
+                  <br />
+                  <p class="fst-italic">Diketahui matriks \(A=\begin{pmatrix} 2&-1&1 \\ 3&0&5 \\ -2&4&3 \end{pmatrix}\). Tentukan kofaktor dari \(a_{23}\) dan \(a_{31}\)</p>
+                  <b>JAWAB</b> <br />
+                  \(\begin{align} K_{23} &=(-1)^{2+3} \, \text{minor} \, a_{23} \\ &= (-1)^5 \begin{vmatrix}2&-1 \\ -2&4 \end{vmatrix} \\ &= (-1) (8-2) \\ &= -6 \end{align}\) <br />
+                  \(\begin{align} K_{31} &=(-1)^{3+1} \, \text{minor} \, a_{31} \\ &= (-1)^4 \begin{vmatrix}-1&1 \\ 0&5 \end{vmatrix} \\ &= (1) (-5-0) \\ &= 5 \end{align}\)
+                </div>
+              </div>
+              <p style="text-indent: 0.5in">Nilai determinan matriks \(A\) adalah penjumlahan dari hasil kali semua elemen suatu baris atau kolom matriks \(A\) tersebut dengan kofaktor masing-masing.</p>
+              <br />
+              misalnya :
+              <ol type="1">
+                <li>
+                  Menggunakan elemen-elemen baris ke-<i>i</i>, maka <br />
+                  <div class="overflow-auto">
+                    \( \text{det} A=(a_{i1} \times K_{i1})+(a_{i2} \times K_{i2})+ ... + (a_{in} \times K_{in}) \).
+                  </div>
+                </li>
+                <li>
+                  Menggunakan elemen-elemen kolom ke-<i>j</i>, maka <br />
+                  <div class="overflow-auto">
+                    \( \text{det} A=(a_{1j} \times K_{1j})+(a_{2j} \times K_{2j})+ ... + (a_{nj} \times K_{nj}) \).
+                  </div>
+                </li>
+              </ol>
+              <!-- contoh 7.6 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.6 </b></div>
+                  <br />
+                  <p class="fst-italic">
+                    Tentukan determinan matriks \(A=\begin{pmatrix} 2&1&4 \\ 3&5&1 \\ 1&4&2 \end{pmatrix} \) dengan menggunakan metode kofaktor. <br />
+                    a. Dengan baris ke-1 <br />
+                    b. Dengan kolom ke-2
+                  </p>
+                  <b>JAWAB</b> <br />
+                  a. Dengan baris ke-1, maka 
+                  <div class="overflow-auto">
+                    $$ \begin{align} \text{det} A &= a_{11}.K_{11}+a_{12}.K_{12}+a_{13}.K_{13} \\ &=2 \times (-1)^{1+1} \begin{vmatrix}5&1\\4&2 \end{vmatrix}+1 \times (-1)^{1+2}\begin{vmatrix}3&1 \\ 1&2
+                    \end{vmatrix}+4 \times (-1)^{1+3}\begin{vmatrix}3&5\\1&4 \end{vmatrix} \\ &=2 \times 1 \times (10-4)+1\times(-1)(6-1)+4\times1\times(12-5)\\ &=12+(-5)+28 \\ &= 35 \end{align}$$
+                  </div>
+                  b. Dengan kolom ke-2, maka 
+                  <div class="overflow-auto">
+                    $$ \begin{align}
+                    \text{det} A &= a_{12}.K_{12}+a_{22}.K_{22}+a_{32}.K_{32} \\ &=1 \times (-1)^{1+2} \begin{vmatrix}3&1\\1&2 \end{vmatrix}+5 \times (-1)^{2+2}\begin{vmatrix}2&4 \\ 1&2 \end{vmatrix}+4 \times (-1)^{3+2}\begin{vmatrix}2&4\\3&1
+                    \end{vmatrix} \\ &=(-1) \times (6-1) +5\times1 \times(4-4)+4\times(-1)\times(2-12)\\ &=-5+0+40 \\ &= 35 \end{align}$$
+                  </div>
+                  <br />
+                </div>
+              </div>
+              <i><li class="fw-bold">Metode Sarrus</li></i>
+              <p style="text-indent: 0.5in">Selain menggunakan metode kofaktor dapat pula digunakan <i>kaidah Sarrus</i> untuk menentukan determinan matriks ordo 3 x 3. Ada beberapa langkah yang perlu dilakukan.</p>
+              <ol type="1">
+                <li>Tuliskan kembali kolom pertama dan kolom kedua di sebelah kanan garis.</li>
+                <li>Kalikan elemen-elemen yang terletak pada dan sejajar diagonal utama kemudian jumlahkan. Kalikan juga elemen-elemen yang terletak pada dan sejajar diagonal samping kemudian jumlahkan.</li>
+                <li>Determinan matriks adalah jumlah dari hasil kali elemen-elemen pada dan sejajar diagonal utama dikurangi hasil kali elemen-elemen yang terletak pada dan sejajar diagonal samping.</li>
+              </ol>
+              <p class="text-center">
+                Jika \(P=\begin{pmatrix}a&b&c \\ d&e&f \\ g&h&i \end{pmatrix} \), maka \(\text{det}(P)=\)
+                <img src="/matriks/pengertian/sarrus.png" alt="sarrus" width="140" class="img-fluid" />
+              </p>
+              \(|P|=(a \times e \times i)\)\(+(b \times f \times g)\)\(+(c \times d \times h)\)\(-(g\times e \times c)\)\(-(h \times f \times a)\)\(-(i \times d \times b)) \)
+              <br />
+              <br />
+              <!-- contoh 7.7 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.7 </b></div>
+                  <br />
+                  <p class="fst-italic">Tentukan determinan dari matriks \(P=\begin{pmatrix} 1&2&4 \\ 2&3&-1 \\ 4&5&3 \end{pmatrix}\)</p>
+                  <b>JAWAB</b> <br />
+                  <div class="overflow-auto">
+                    \(\begin{align}|P|&=\begin{vmatrix} 1&2&4 \\ 2&3&-1 \\4&5&3\end{vmatrix} \begin{matrix} 1&2 \\ 2&3 \\ 4&5 \end{matrix} \\ |P|&=(1.3.3)+(2.(-1).4)(4.2.5)-(4.3.4)-(5.(-1).1)-(3.2.2) \\ &= 9+(-8) +40-48+5-12 \\ &=-14
+                    \end{align} \)
+                  </div>
+                </div>
+              </div>
+              <p style="text-indent: 0.5in">Sifat-sifat determinan matriks persegi adalah sebagai berikut.</p>
+              <ol type="1">
+                <li>\(\text{det}(A)=\text{det}(A')\)</li>
+                <li>Jika dua baris/kolom matriks \(A\) saling dipertukarkan sehingga didapat matriks \(B\), maka \(\text{det}(B)=-\text{det}(A)\)</li>
+                <li>Jika suatu baris/kolom matriks \(A\) digandakan dengan suatu skalar \(k\) sehingga didapat matriks \(B\), maka \(\text{det}(B)=k.\text{det}(A)\)</li>
+                <li>Jika matriks \(A\) memiliki suatu baris/kolom yang semua elemennya nol, maka \(\text{det}(A)=0\)</li>
+                <li>Jika ada satu baris/kolom matriks \(A\) merupakan kelipatan dari baris/kolom yang lain, maka \(\text{det}(A)=0\)</li>
+                <li>JIka \(A\) merupakan matriks segitiga atas atau matriks segitiga bawah, maka determinan matriks \(A\) adalah perkalian elemen-elemen diagonal utamanya.</li>
+                <li>Jika matriks segi \(A\) dan matriks segi \(B\) memiliki ukuran yang sama, maka \(\text{det}(A.B)=\text{det}(A).\text{det}(B)\).</li>
+                <li>
+                  Jika matriks \(A\) adalah matriks persegi, \(k\) dalam suatu konstanta, maka: <br />
+                  a) \(\text{det}(k A)=k^n \text{det}(A)\to\) <i> n adalah ordo matriks persegi</i> <br />
+                  b) \(\text{det}(A^m)=[\text{det}(A)]^m\)
+                </li>
+              </ol>
+              <!-- contoh 7.8 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.8 </b></div>
+                  <br />
+                  <p class="fst-italic">
+                    Jika diketahui matriks \(A=\begin{pmatrix} 2&3&1 \\ 4&1&5 \\ 6&7&9 \end{pmatrix}\) mempunyai determinan \(-48\), maka tentukan determinan dari matriks berikut! <br />
+                    a.\(B=\begin{pmatrix} 2&4&6 \\ 3&1&7 \\ 1&5&9 \end{pmatrix}\) <br />
+                    b. \(C=\begin{pmatrix} 4&1&5 \\ 2&3&1 \\ 6&7&9 \end{pmatrix}\) <br />
+                    c. \(D=\begin{pmatrix} 2&3&1 \\ 8&2&10 \\ 6&7&9 \end{pmatrix}\)
+                  </p>
+                  <b>JAWAB</b> <br />
+                  <ol type="a">
+                    <li>Matriks \(B\) merupakan transpose dari matriks \(A\), sehingga \(\text{det} (B) = \text{det} (A) = - 48\)</li>
+                    <li>Matriks \(C\) merupakan matriks \(A\) yang baris kedua ditukar dengan baris pertama, sehingga \(\text{det}(C)=-\text{det}(A)=48\).</li>
+                    <li>Matriks \(D\) merupakan matriks \(A\) yang baris kedua dikalikan dengan \(2\), sehingga \(\text{det}(D)=2.\text{det}(A)=2.(-48)=-96\).</li>
+                  </ol>
+                </div>
+              </div>
+              <br />
+              <!-- contoh 7.9 -->
+              <div class="row p-2 justify-content-center">
+                <div class="col-md-9">
+                  <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.9 </b></div>
+                  <br />
+                  <p class="fst-italic">
+                    Tentukan determinan dari matriks-matriks berikut! <br />
+                    a.\(A=\begin{pmatrix} 1&2&3 \\ 0&0&0 \\ 1&1&4 \end{pmatrix}\) <br />
+                    b. \(B=\begin{pmatrix} 1&2&3 \\ 2&4&6 \\ 4&5&6 \end{pmatrix}\) <br />
+                    c. \(C=\begin{pmatrix} 1&2&3 \\ 0&4&5 \\ 0&0&6 \end{pmatrix}\)
+                  </p>
+                  <b>JAWAB :</b> <br />
+                  <ol type="a">
+                    <li>Karena pada matriks \(A\) ada baris (yaitu baris kedua) yang semua elemennya nol, maka \(\text{det}(A)=0\).</li>
+                    <li>Karena pada matriks \(B\) ada baris (yaitu, baris kedua) yang semua elemennya merupakan kelipatan dari baris lainnya (yaitu, baris pertama) maka \(\text{det}(B)=0\).</li>
+                    <li>Karena matriks \(C\) merupakan matriks segitiga atas, maka \(\begin{vmatrix}1&2&3\\0&4&5\\0&0&6 \end{vmatrix}=(1)(4)(6)=24\)</li>
+                  </ol>
+                </div>
+              </div>
+            </ol>
+            <!-- end determinan ordo 3 -->
+            <li class="fw-bold">Invers Matriks Persegi Berordo Dua</li>
+            <p style="text-indent: 0.5in">
+              Misalnya \(A\) dan \(B\) adalah matriks persegi berordo sama dan berlaku \(AB=BA=I\) dengan \(I\) adalah matriks identitas, maka \(B\) disebut "invers perkalian" (selajutnya ditulis "invers" saja dari \(A\) dan \(A\) adalah
+              invers dari \(B\) dengan kata lain \(A\) dan \(B\) saling invers.
+            </p>
+            <div class="row p-2 justify-content-center">
+              <div class="col-md-9">
+                <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.10 </b></div>
+                <br />
+                <p class="fst-italic">Diketahui \(A=\begin{pmatrix} 5&7 \\ 2&3 \end{pmatrix}\) dan \(B=\begin{pmatrix} 3&-7 \\ -2&5 \end{pmatrix}\). Tentukan</p>
+                <br />
+                a. \(AB\) <br />
+                b. \(BA\) <br />
+                <b>JAWAB:</b> <br />
+                a. \(A\) dikalikan dari kanan dengan \(B\), diperoleh <br />
+                $$\begin{align} AB &=\begin{pmatrix} 5&7 \\ 2&3 \end{pmatrix} \begin{pmatrix} 3&-7 \\ -2&5 \end{pmatrix} \\ &= \begin{pmatrix} 15-14 & -35+35 \\ 6-6&-14+15 \end{pmatrix} \\ &= \begin{pmatrix} 1&0 \\ 0&1 \end{pmatrix}
+                \end{align}$$ <br />
+                b. \(A\) dikalikan dari kiri dengan \(B\), diperoleh <br />
+                $$\begin{align} BA &=\begin{pmatrix} 3&-7 \\ -2&5 \end{pmatrix} \begin{pmatrix} 5&7 \\ 2&3 \end{pmatrix} \\ &= \begin{pmatrix} 15-14 & 21-21 \\ -10+10&-14+15 \end{pmatrix} \\ &= \begin{pmatrix} 1&0 \\ 0&1 \end{pmatrix}
+                \end{align}$$ <br />
+                <p style="text-indent: 0.5in">Invers dari matriks \(A\) disimbolkan dengan \(A^{-1}\). Berikut ini akan dijelaskan prosedur menentukan invers matriks persegi berordo dua. <br /></p>
+                <p style="text-indent: 0.5in">
+                  Misalnya \(A\) adalah matriks persegi berordo dua, yaitu \(A=\begin{pmatrix} a&b \\ c&d \end{pmatrix}\) dan misalnya invers matriks \(A\) adalah \(A^{-1}=\begin{pmatrix} x&y \\ u&v \end{pmatrix}\). Berdasarkan pengertian
+                  invers matriks, maka berlaku \(AA^{-1}=I\), dengan \(I\) adalah matriks identitas.
+                </p>
+                $$\begin{pmatrix} a&b \\ c&d \end{pmatrix} \begin{pmatrix} x&y \\ u&v \end{pmatrix}=\begin{pmatrix} 1&0 \\ 0&1 \end{pmatrix}$$ $$\begin{pmatrix} ax+bu&ay+bv \\ cx+du&cy+dv \end{pmatrix}=\begin{pmatrix} 1&0 \\ 0&1
+                \end{pmatrix}$$ Berdasarkan kesamaan matriks, diperoleh <br />
+                \(ax+bu=1 \to ...(1)\) <br />
+                \(cx+du=0 \to ...(2)\) <br />
+                \(ay+bv=0 \to ...(3)\) <br />
+                \(cy+dv=1 \to ...(4)\) <br />
+                Selanjutnya selesaikan sistem persamaan tersebut untuk menentukan nilai \(x\), \(y\), \(u\), dan \(v\) <br />
+                <div class="overflow-auto">\( \begin{align} ax+bu = 1 | \times d| adx+bdu &= d \\ cx+du=0 |\times b| bcx+bdu &= 0 \\ adx-bcx &= d \\ x(ad-bc &=d) \to x= \frac{d}{ad-bc} \end{align}\)</div>
+                 <br />
+                Substitusikan \(x\) pada persamaan (1), sehingga diperoleh $$u=\frac{-c}{ad-bc}$$ <br />
+                Dengan cara yang sama seperti di atas, akan diperoleh juga 
+                $$y=\frac{-b}{ad-bc}$$ dan $$v=\frac{a}{ad-bc}$$ Dengan demikian $$\begin{align}A^{-1} &= \begin{bmatrix}\frac{d}{ad-bc} & & \frac{-b}{ad-bc} \\ \frac{-c}{ad-bc} & &
+                \frac{a}{ad-bc}\end{bmatrix} \\ &= \frac{1}{ad-bc}\begin{bmatrix}d&-b \\ -c&a \end{bmatrix}, \text{dengan } ad-bc \ne 0 \end{align} $$
+                <p style="text-indent: 0.5in">
+                  Jika determinan \(A=0\) atau \(ad-bc=0\), maka pembagian tersebut tidak terdefinisikan sehingga \(A^{-1}\) tidak ada. Matriks yang tidak mempunyai invers, disebut <i>matriks singular.</i> JIka determinan \(A \ne 0\) atau
+                  \(ad-bc \ne 0\), maka matriks \(A\) disebut <i>matriks non singular.</i> <br />
+                </p>
+                Dari uraian di atas dapat disimpulkan sebagai berikut.
+                <div class="row justify-content-center">
+                  <div class="col-md text-center border bg-warning p-2 rounded rounded-4 shadow">
+                    \(Invers \: matriks \: A=\begin{bmatrix}a&b \\ c&d \end{bmatrix}\: adalah \) \( A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&-b \\ -c&a \end{bmatrix},\: dengan \: ad-bc\ne 0\)
+                  </div>
+                </div>
+                <div class="row p-2 justify-content-center">
+                  <div class="col-md">
+                    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.11 </b></div>
+                    <br />
+                    <p class="fst-italic">Tentukan invers matriks berikut!</p>
+                    <div class="row">
+                      <div class="col-md p-2">
+                        a. \(\:A=\begin{pmatrix}4&2 \\ 5&3\end{pmatrix}\) <br />
+                        <b>JAWAB:</b> <br />
+                        a. \(\:\begin{align}A^{-1} &= \frac{1}{4.3-5.2}\begin{pmatrix}3&-2 \\ -5&4\end{pmatrix} \\ &= \frac{1}{2}\begin{pmatrix}3&-2 \\ -5&4\end{pmatrix} \\ &= \begin{pmatrix}\frac{3}{2}&-1 \\ -\frac{5}{2} & 2\end{pmatrix}
+                        \end{align}\)
+                      </div>
+                      <div class="col-md p-2">
+                        b. \(\:B=\begin{pmatrix}2&-3 \\ 1&5\end{pmatrix}\) <br />
+                        <b>JAWAB:</b> <br />
+                        b. \(\:\begin{align}B^{-1} &= \frac{1}{2.5-(-3).1}\begin{pmatrix}5&3 \\ -1&2\end{pmatrix} \\ &= \frac{1}{3}\begin{pmatrix}5&3 \\ -1&2\end{pmatrix} \\ &= \begin{pmatrix}\frac{5}{13}&\frac{3}{13} \\ -\frac{1}{13} &
+                        \frac{2}{13}\end{pmatrix} \end{align}\)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row p-2 justify-content-center">
+                  <div class="col-md">
+                    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.12 </b></div>
+                    <br />
+                    <p class="fst-italic">Diketahui \(A=\begin{pmatrix}1&3 \\ 5&3\end{pmatrix}\) dan \(I=\begin{pmatrix}1&0 \\ 0&1\end{pmatrix}\). Tentukan nilai k jika matriks \(A-kI)\) adalah matriks singular!</p>
+                    <br />
+                    <b>JAWAB:</b> <br />
+                    Misalnya \(P=A-kI\), maka $$\begin{align} P &= \begin{pmatrix}1&3 \\ 5&3\end{pmatrix} -k\begin{pmatrix}1&0 \\ 0&1\end{pmatrix} \\ &= \begin{pmatrix}1&3 \\ 5&3\end{pmatrix}-\begin{pmatrix}k&0 \\ 0&k\end{pmatrix} \\ &=
+                    \begin{pmatrix}1-k&3 \\ 5&3-k\end{pmatrix} \end{align}$$ Karena \(P\) matriks singular, maka \(\text{det}\:P\) sama dengan nol, sehingga diperoleh: <br />
+                    \(\begin{align} \text{det}\:P &=0 \\ (1-k)(3-k)-(3)(5) &=0 \\ 3-k-3k+k^2-15 &=0 \\ k^2-4k-12 &=0 \\ (k+2)(k-6)&=0 \end{align} \) <br />
+                    \(k=-2\) atau \(k=6\) <br />
+                    Jadi, diperoleh nilai \(k=-2\) atau \(k=6\)
+                  </div>
+                </div>
+                Jika \(A\) dan \(B\) adalah matriks non singular, maka berlaku
+                <ol type="a">
+                  <li>\(AA^{-1}=A^{-1}A=I\)</li>
+                  <li>\(A^{-1})^{-1}\)</li>
+                  <li>\((A.B)^{-1}=B^{-1}.A^{-1}\)</li>
+                  <li>\((A')^{-1}=(A^{-1})'\)</li>
+                  <li>\(\text{det }A^{-1}=\frac{1}{\text{det }A}\)</li>
+                </ol>
+              </div>
+            </div>
+
+            <li class="fw-bold">Invers Matriks Persegi Berordo 3x3</li>
+            <p style="text-indent: 0.5in">
+              Pada bagian ini kita akan membahas invers matriks yang berordo 3x3. Salah satu cara yang dapat digunakan adalah dengan menggunakan <i>adjoin</i> dari suatu matriks. Sebelum kita mempelajari <i>adjoin</i> suatu matriks
+              penegrtian <i><b>minor</b></i> dan <i><b>kofaktor</b></i> mutlak diperlukan sebagai syarat untuk memperoleh <i>adjoin</i> suatu matriks.
+            </p>
+            <p style="text-indent: 0.5in">Misalkan \(A\) adalah suatu matriks yang berordo 3x3 yang ditulis dalam bentuk</p>
+            $$A=\begin{pmatrix}a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{23} \\ a_{31}&a_{32}&a_{33} \end{pmatrix} $$
+            <p style="text-indent: 0.5in">
+              <i>Matriks kofaktor</i> yang dilambangkan dengan C adalah suatu matriks yang elemen-elemen dari matriks tersebut merupakan kofaktor \((K_{ij})\) dari suatu matriks. Transpose dari matriks kofaktor ini disebut
+              <i>matriks adjoin</i> yang disingkat \(Adj\). Untuk matriks \(A\) di atas misalnya \(K_{ij}\) merupakan kofaktor dari \(a_{ij}), maka kofaktor dari matriks A adalah
+            </p>
+            $$C=\begin{pmatrix}K_{11}&K_{12}&K_{13} \\ K_{21}&K_{22}&K_{23} \\ K_{31}&K_{32}&K_{33} \end{pmatrix} $$ sedangkan adjoin dari matriks \(A\) adalah $$C=\begin{pmatrix}K_{11}&K_{21}&K_{31} \\ K_{12}&K_{22}&K_{32} \\
+            K_{13}&K_{23}&K_{33} \end{pmatrix} $$
+            <p style="text-indent: 0.5in">Berdasarkan pengertian <i>adjoin</i> suatu matriks di atas, maka invers dari \(A\) yang berordo 3x3 dapat diperoleh dengan cara:</p>
+
+            <div class="row justify-content-center">
+          <div class="card text-md-light mb-3" style="max-width: 18rem">
+            <div class="card-header text-center">Pengertian</div>
+            <div class="card-body text-center">
+              <p class="card-text fst-italic">
+                \(A^{-1}=\frac{1}{\text{det}A}Adj A\)
+              </p>
+            </div>
+          </div>
+          </ol>
+        </div>
+<div class="row p-2 justify-content-center">
+  <div class="col-md-8">
+     <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 7.13 </b>
+    </div>
+     <p class="fst-italic">Misalnya diberikan matriks-matriks</p>
+     \(A=\begin{pmatrix}5&7&3 \\ 0&-1&0 \\ 2&4&1 \end{pmatrix}\) dan \(B=\begin{pmatrix}3&2&4 \\ 2&1&3 \\0&1&-2 \end{pmatrix}  \) <br>
+     Tentukanlah <br>
+     a. invers dari matriks \(A\) <br>
+     b. invers dari matriks \(B\) <br>
+
+     <b>JAWAB</b> <br>
+     <div class="overflow-auto">\(\begin{align}\text{a. }\text{det }A &=\begin{vmatrix}5&7&3 \\ 0&-1&0 \\2&4&1 \end{vmatrix}\begin{matrix}5&7 \\ 0&-1 \\2&4\end{matrix} \\ &= 5.(-1).1+7.0.2+3.0.4-3.(-1).2-5.0.4-7.0.1 \\ &= -5+0+0+6+0+0 \\ &=1 \end{align}\)
+     </div>
+      <br>
+      <div class="overflow-auto">
+        \(Adj (A) =\begin{pmatrix}\begin
+        {vmatrix}-1&0 \\ 4&1\end{vmatrix}&-\begin{vmatrix}7&3\\4&1 \end{vmatrix}&\begin{vmatrix}7&3\\-1&0 \end{vmatrix} \\
+        -\begin{vmatrix}0&0\\2&1 \end{vmatrix}&\begin{vmatrix}5&3\\2&1 \end{vmatrix}&-\begin{vmatrix}5&3\\0&0 \end{vmatrix}\\
+        \begin{vmatrix}0&-1\\2&4 \end{vmatrix}&-\begin{vmatrix}5&7\\2&4 \end{vmatrix}&\begin{vmatrix}5&7\\0&-1 \end{vmatrix} 
+        \end{pmatrix} = \begin{pmatrix}-1&5&3 \\ 0&-1&0 \\ 2&-6&-5 \end{pmatrix}\) 
+    </div>
+    <br>
+    <div class="overflow-auto">
+      \(\begin{align}\text{Jadi, invers dari }A \text{ adalah } A^{-1} &= \frac{1}{\text{det }(A)}.Adj (A) \\ &=\frac{1}{1} \begin{pmatrix}-1&5&3 \\ 0&-1&0 \\ 2&-6&-5 \end{pmatrix} \\ &= \begin{pmatrix}-1&5&3 \\ 0&-1&0 \\ 2&-6&-5 \end{pmatrix} \end{align}
+      \)
+    </div>
+     <div class="overflow-auto">\(\begin{align}\text{b. }\text{det }B &=\begin{vmatrix}3&2&4 \\ 2&1&3 \\0&1&-2 \end{vmatrix}\begin{matrix}3&2 \\ 2&1 \\0&1\end{matrix} \\ &= 3.1.(-2)+2.3.0+4.2.1-4.1.0-3.3.1-2.2.(-2) \\ &= -6+0+8-0-9+8 \\ &=-15+16 \\ &=1 \end{align}\)
+     </div>
+      <br>
+      <div class="overflow-auto">
+        \(Adj (B) =\begin{pmatrix}\begin
+        {vmatrix}1&3 \\ 1&-2\end{vmatrix}&-\begin{vmatrix}2&4\\1&-2 \end{vmatrix}&\begin{vmatrix}2&4\\1&3 \end{vmatrix} \\
+        -\begin{vmatrix}2&3\\0&-2 \end{vmatrix}&\begin{vmatrix}3&4\\0&-2 \end{vmatrix}&-\begin{vmatrix}3&4\\2&3 \end{vmatrix}\\
+        \begin{vmatrix}2&1\\0&1 \end{vmatrix}&-\begin{vmatrix}3&2\\0&1 \end{vmatrix}&\begin{vmatrix}3&2\\2&1 \end{vmatrix} 
+        \end{pmatrix} = \begin{pmatrix}-5&8&2 \\ 4&-6&-1 \\ 2&-3&-1 \end{pmatrix}\) 
+    </div>
+    <br>
+    <div class="overflow-auto">
+      \(\begin{align}\text{Jadi, invers dari }B \text{ adalah } B^{-1} &= \frac{1}{\text{det }(B)}.Adj (B) \\ &=\frac{1}{1} \begin{pmatrix}-5&8&2 \\ 4&-6&-1 \\ 2&-3&-1 \end{pmatrix} \\ &= \begin{pmatrix}-5&8&2 \\ 4&-6&-1 \\ 2&-3&-1 \end{pmatrix} \end{align}
+      \)
+    </div>
+  </div>
+</div>
+<!--  div row paling atas -->
+      </div>
+      <div class="row justify-content-center p-1">
+          <div class="col-md-10 border border-dark">
+            <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 7.1</div>
+            <ol>
+              <li>
+                Tentukan determinan matriks-matriks berikut ini! <br>
+                <div class="row">
+                  <div class="col-md">
+                    \(\text{a. }A=\begin{pmatrix}3&2 \\ 5&4 \end{pmatrix}\) <br>
+                    \(\text{b. }D=\begin{pmatrix}2&-1&5 \\ 1&3&4 \\ 1&-1&2 \end{pmatrix}   \) <br>
+                    
+                  </div>
+                  <div class="col-md">
+                    \(\text{c. }B=\begin{pmatrix}-5&7 \\ -7&9 \end{pmatrix}   \) <br>
+                    \(\text{d. }E=\begin{pmatrix}-3&1&2 \\ 1&0&-1 \\ 4&5&-1 \end{pmatrix}\) <br>
+                  
+                  </div>
+                  <div class="col-md">
+                    \(\text{e. }C=\begin{pmatrix}-5&3 \\ -3&2 \end{pmatrix}   \) <br>
+                    \(\text{f. }F=\begin{pmatrix}4&-1&-3 \\ -1&2&0 \\ 6&5&-2 \end{pmatrix}   \)
+                  </div>
+                </div>
+              </li>
+              <li>
+                Manakah di antara matriks-matriks berikut ini merupakan matriks singular?
+                <div class="row">
+                  <div class="col-md">
+                    \(\text{a. }A=\begin{pmatrix}1&-3 \\ -2&6 \end{pmatrix}  \) <br>
+                    \(\text{b. }B=\begin{pmatrix}4&6 \\-1&3 \end{pmatrix}  \) <br>
+                  </div>
+                  <div class="col-md">
+                    \(\text{c. }C=\begin{pmatrix}2&-1 \\ 3&-5 \end{pmatrix}  \) <br>
+                    \(\text{d. }D=\begin{pmatrix}-2&4 \\ 5&-10 \end{pmatrix}  \) <br>
+                  </div>
+                  <div class="col-md">
+                    \(\text{e. }E=\begin{pmatrix}7&5 \\ -3&2 \end{pmatrix}  \) <br>
+                    \(\text{f. }F=\begin{pmatrix}-4&3 \\ 24&-18 \end{pmatrix}  \) <br>
+                  </div>
+                </div>
+                
+              </li>
+              <li>Buktikan bahwa matriks \(A\) dan \(B\) berikut saling invers!</li>
+              \(\text{a. }A=\begin{pmatrix}3&-5 \\ -2&3 \end{pmatrix}\) dan \(B=\begin{pmatrix}-3&-5 \\ -2&-3 \end{pmatrix}\) <br>
+              \(\text{b. }A=\begin{pmatrix}8&5 \\ 3&2 \end{pmatrix}  \) dan \(B=\begin{pmatrix}2&-5 \\ -3&8 \end{pmatrix}\) <br>
+              \(\text{c. }A=\begin{pmatrix}7&-1 \\ -13&2 \end{pmatrix}  \) dan \(B=\begin{pmatrix}2&1 \\ 13&7 \end{pmatrix}\) <br>
+              \(\text{d. }A=\begin{pmatrix}16&7 \\ 9&4 \end{pmatrix}  \) dan \(B=\begin{pmatrix}4&-7 \\ -9&16 \end{pmatrix}\) <br>
+              <li>Tentukan invers matriks-matriks berikut!</li>
+              <div class="row">
+                <div class="col">
+                  a. \(A=\begin{pmatrix}1&2 \\ 1&3 \end{pmatrix}\) <br>
+                  b. \(B=\begin{pmatrix}4&3 \\ 7&5 \end{pmatrix}  \) <br>
+                  c. \(C=\begin{pmatrix}10&11 \\ 2&2 \end{pmatrix} \) <br>
+                </div>
+                <div class="col">
+                  d. \(D=\begin{pmatrix}2&3 \\ 3&5 \end{pmatrix} \) <br>
+                  e. \(E=\begin{pmatrix}4&11 \\ 3&8 \end{pmatrix} \) <br>
+                  f. \(M=\begin{pmatrix}0&-3&2 \\ 1&-2&4 \\ 2&0&6 \end{pmatrix} \)
+                </div>
+                <div class="col">
+                  g. \(L=\begin{pmatrix}8&-11&9 \\ 2&7&2 \\ 0&1&0 \end{pmatrix} \) <br>
+                  h. \(K=\begin{pmatrix}2&0&-5 \\ -4&-1&8 \\ 3&0&7 \end{pmatrix} \) <br>
+                  \(N=\begin{pmatrix}2&0&0 \\ 8&4&-9 \\ -6&-7&16 \end{pmatrix} \)
+                </div>
+              </div>
+              <li>Diketahui matriks \(A=\begin{pmatrix}6&2 \\ -3&-2 \end{pmatrix}\), \(B=\begin{pmatrix}-1&-5 \\ 0&3k+1 \end{pmatrix}\), dan \(C=\begin{pmatrix}2&3 \\ 3&5 \end{pmatrix} \). <br> Tentukan nilai \(k\) jika memenuhi \(A+B=C^{-1}\).  </li>
+            </ol>
+          </div>
+        </div>
+      <!----container-->
+    </div>
+    <!-- tombol bawah -->
+<section style="padding-bottom: 6rem;">
+ <div class="container">
+      <div class="d-grid gap-2 d-md-block position-relative">
+        <a href="/matriks/perkalian.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Perkalian Matriks</button></a>
+        <a href="/matriks/penerapan.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Penerapan Matriks</button></a>
+      </div>
+    </div>
+</section>
+   
+    <br />
+    <!-- end tombol bawah -->
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white fixed-bottom">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold"><i> I Putu Darma Putra</i></a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

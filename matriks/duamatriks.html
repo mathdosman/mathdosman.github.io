@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- ============================================================================================================================ -->
+
+    <title>Kesamaan Dua Matriks</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <img src="logonew.png" alt="logo" width="55" height="55" class="rounded-circle" />
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/index.html">Home Matriks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/matriks/soal.html">Soal-soal</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sub Materi Matriks</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/matriks/pengertian.html">1. Pengertian Matriks</a>
+                </li>
+                <li><a class="dropdown-item" href="/matriks/jenismatriks.html">2. Jenis Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/tranpose.html">3. Tranpose Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/duamatriks.html">4. Kesamaan Dua Matriks</a></li>
+                <li>
+                  <a class="dropdown-item" href="/matriks/operasimatriks.html"
+                    >5. Penjumlahan dan <br />
+                    Pengurangan Matriks</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="/matriks/perkalian.html">6. Perkalian Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/invers.html">8. Invers Matriks</a></li>
+                <li><a class="dropdown-item" href="/matriks/penerapan.html">9. Penerapan Matriks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- start materi 1 -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md text-center">
+            <h3><b>Kesamaan Dua Matriks</b></h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <p>Perhatikan definisi kesamaan dua matriks berikut!</p>
+            <div class="container bg-warning border rounded-3 shadow">
+              <p class="fst-italic">Misalnya A = (a) dan B = (b) dua buah matriks yang berordo sama. Matriks A dikatakan sama dengan matriks B jika elemen-elemen yang seletak pada kedua matriks bernilai sama.</p>
+            </div>
+            <p class="mt-2">Untuk lebih memahamikesamaan dua buah matriks, perhatikan contoh berikut.</p>
+            <!-- Contoh Soal 4.1 -->
+            <div class="container">
+              <div class="badge bg-primary text-wrap fs-6" style="width: 8rem">CONTOH 4.1</div>
+              <i><p>Periksalah kesamaan dua matriks berikut!</p></i>
+              <div class="row justify-content-center">
+                <div class="col-md-9">
+                  a. \( A=\begin{pmatrix} 3&-1 \\ \frac{18}{6} &2 \end{pmatrix}\) dan \( B= \begin{pmatrix} \frac{6}{2}&-1\\ 3&2 \end{pmatrix}\) <br />
+                  b. \(A=\begin{pmatrix}2&-1 \\ 5&4 \end{pmatrix} \) dan \(B=\begin{pmatrix} 2&-1 \\ -3&4 \end{pmatrix}\)
+                </div>
+              </div>
+              <p><b>JAWAB</b></p>
+              <ol type="a">
+                <li>
+                  Matriks A dan B berordo sama, yaitu 2 x 2 dan elemen-elemen yang seletak juga sama sehingga matriks A sama dengan matriks B <br />
+                  <img src="duamatriks/2matrik1.png" class="img-fluid" alt="contoha" />
+                </li>
+                <li>
+                  Matriks A dan B berordo sama, yaitu 2 x 2 dan elemen-elemen yang seletak ada yang tidak sama sehingga matriks A tidak sama dengan matriks B <br />
+                  <img src="duamatriks/2matrik2.png" class="img-fluid" alt="contohb" width="500" />
+                </li>
+              </ol>
+            </div>
+            <!-- end Contoh Soal 4.1 -->
+            <div class="container mt-4">
+              <div class="badge bg-primary text-wrap fs-6" style="width: 8rem">CONTOH 4.2</div>
+              <p>
+                <i>Jika matriks \(A= \begin{pmatrix} 2&2x-y\\ 2&3+x \end{pmatrix}\) sama dengan matriks \(B=\begin{pmatrix} 2&-3 \\ -x&y+2 \end{pmatrix}\) maka tentukanlah nilai \(x+y\)!</i>
+              </p>
+              <p><b>JAWAB</b></p>
+              <div class="overflow-auto">
+                $$\begin{align} A=B \to \begin{pmatrix}2&2x-y\\2&3+x \end{pmatrix} &= \begin{pmatrix}2&-3\\-x&y+2 \end{pmatrix} \\ sehingga \\2 &= -x \\ x&=-2 \\ 3+x &= y+2 \\ 3+(-2) &= y+2 \\ 1-2 &=y \\ y &=-1 \end{align}$$
+              </div>
+              <br />
+              dengan \(x=-2\) dan \(y=-1\) diperoleh \(x+y=(-2)+(-1)=-3\)<br />
+              Jadi, \(x+y=-3\)<br />
+
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md border border-dark">
+            <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 4.1</div>
+            <ol type="1">
+              <li>
+                Diantara matriks-matriks berikut ini, manakah yang sama?
+                <div class="row">
+                  <div class="col-md-3">\(A=\begin{bmatrix}1&2&-1 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(B=\begin{bmatrix}-1&2&1 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(C=\begin{bmatrix}1&2&-1 \end{bmatrix}\)</div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-3">\(P=\begin{bmatrix}-2 \\ -3 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(Q=\begin{bmatrix}2 \\ 3 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(R=\begin{bmatrix}3 \\ 2 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(S=\begin{bmatrix}2 \\ 3 \end{bmatrix}\)</div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-3">\(K=\begin{bmatrix}2&-1 \\ 5&-6 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(L=\begin{bmatrix}-2&1\\-5&6 \end{bmatrix}\)</div>
+                  <div class="col-md-3">\(M=\begin{bmatrix}2&5 \\ -1&-6\end{bmatrix}\)</div>
+                  <div class="col-md-3">\(N=\begin{bmatrix}2&-1 \\ 5&-6\end{bmatrix}\)</div>
+                </div>
+              </li>
+              <br />
+              <li>
+                Tentukan nilai \(x\) dan \(y\) bila diketahui.
+                <div class="row">
+                  <div class="col-md-3">a. \(\begin{bmatrix}x&y\\1&-3 \end{bmatrix}=\begin{bmatrix}-2&5\\1&-3 \end{bmatrix}\)</div>
+                  <div class="col-md-3">b. \(\begin{bmatrix}x&0\\2y&3 \end{bmatrix}=\begin{bmatrix}1&0\\-4&3 \end{bmatrix}\)</div>
+                  <div class="col-md-3">c. \(\begin{bmatrix}2x&-y \end{bmatrix}=\begin{bmatrix}-6&-2\end{bmatrix}\)</div>
+                  <div class="col-md-3">d. \(\begin{bmatrix}x+2 \\ 3-y \end{bmatrix}=\begin{bmatrix} 1 \\ 5\end{bmatrix}\)</div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-3 overflow-auto">e.\(\begin{bmatrix}x-y \\ x+y \end{bmatrix}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}\)</div>
+                  <div class="col-md-3 overflow-auto">f. \(\begin{bmatrix}4&2 \\5x+y&5 \end{bmatrix}=\begin{bmatrix} 4&2 \\ 7&y+3\end{bmatrix}\)</div>
+                  <div class="col-md-3 overflow-auto">g. \(\begin{bmatrix}2x+y&-3 \\ 1&4x-y \end{bmatrix}=\begin{bmatrix} 5&-3 \\ 1&7\end{bmatrix}\)</div>
+                </div>
+              </li>
+              <br />
+              <li>
+                Diketahui \(P=\begin{bmatrix}1&3&1 \\ 2&4&-2 \\ bc&5&2a \end{bmatrix}\), \(Q=\begin{bmatrix} 1&a&1 \\ 2&4&-2 \\ -12&5&b \end{bmatrix}\), dan \((P')'=Q\). <br />
+                Tentukan nilai \(a+b-c\).
+              </li>
+              <br />
+              <li>
+                Tentukan nilai \(p\), \(q\), dan \(r\) yang memenuhi persamaan matriks berikut <br />
+                <div class="overflow-auto">\(\begin{bmatrix}2p+1&q+2\\4&-3r\end{bmatrix}=\begin{bmatrix} 9&p-q \\ 4&2p+q+3\end{bmatrix}\)</div>
+              </li>
+              <br />
+              <li>
+                Tentukan nilai \(a\), \(b\), dan \(c\) yang memenuhi persamaan matriks berikut. <br />
+                <div class="overflow-auto">
+                  \(\begin{bmatrix} (a+1)^2& (a+1)(c-1)&(b+1)(a+1) \\ (a+1)(c-1) & -(b+1)^2 & (b+1)(c-1) \\ (b+1)(a+1) & (b+1)(c-1) & (c-1)^2 \end{bmatrix}=\begin{bmatrix} 4&-6&2 \\ -6&-1&-3 \\ 2&-3&9 \end{bmatrix} \)
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- tombol bawah -->
+      <div class="container">
+        <div class="d-grid gap-2 d-md-block position-relative">
+          <a href="/matriks/tranpose.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Transpose Matriks</button></a>
+          <a href="/matriks/operasimatriks.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Operasi Matriks</button></a>
+        </div>
+      </div>
+      <!-- end tombol bawah -->
+    </section>
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white fixed-bottom">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
