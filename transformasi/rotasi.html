@@ -61,31 +61,49 @@
       </div>
     </nav>
     <!-- navbar end -->
+<section style="padding-top: 6rem; padding-bottom: 5rem">
+    <div class="container">
 
-    <!-- start materi 1 -->
-    <section style="padding-top: 7rem">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3>Rotasi(Perputaran)</h3>
-            
+                <h3>
+                    Rotasi (Perputaran)
+                </h3>
+                
+                    Rotasi (perputaran) adalah transformasi yang memindahkan suatu titik kr titik lain dengan cara memutar titik tersebut sejauh besar sudut tertentu terhadap titik pusat tertentu.
+                
+                Suatu perputaran ditentukan oleh pusat, besar, dan arah sudutnya. Searah dengan jarum jam adalah arah negatif, sedangkan berlawanan dengan arah jarum jam adalah arah positif. Kalian akan mempelajari rotasi terhadap titik pusat \(O(0,0)\) dan rotasi terhadap pusat tertentu. 
+                <ol>
+                    <li class="fst-italic fw-bold">Rotasi terhadap Titik Pusat \(O(0,0)\)</li>
+                    
+                        Titik \(P'(x',y')\) merupakan hasil perputaran titik \(P(x,y)\) dengan pusat \(O(0,0)\) dan besar sudut putaran \(\alpha\). Perhatiakan gambar berikut. <br>
+                        <img src="/transformasi/img/rotasi00.png" alt="pusat00" class="img-fluid"><br>
+                        Koordinat polar titik \(P\) <br>
+                        \(x=r \cos \alpha \) <br>
+                        \(y=r \sin \alpha \) <br>
+                        Koordinat polar titik \(P'\) <br>
+                        \(\begin{align}
+                            x' &= r \cos (\alpha + \alpha) \\ &= r \cos \alpha \cos \alpha - r\sin \alpha \sin \alpha \\ &=x \cos \alpha - y \sin \alpha
+                        \end{align}\) <br>
+                        \(\begin{align}
+                            y' &= r \sin (\alpha + \alpha) \\ &= r \sin \alpha \cos \alpha + r\cos \alpha \sin \alpha \\ &=y \cos \alpha + x \sin \alpha \\ &= x \sin \alpha + y \cos \alpha
+                        \end{align}\) <br>
+                        Sehingga titik \(P'(x',y')\) diperoleh:
+                        <div class="overflow-auto">\(T_{R[O, \alpha]} : P(x,y) \to P'(x \cos \alpha - y \sin \alpha, x \sin \alpha + y \cos \alpha)\)</div> <br>
+                        Kita sudah ketahui bahwa bila titik \(P(x,y)\) dirotasikan sebesar \(\alpha\) terhadap titik pusat \(O(0,0)\), maka bayangannya adalah \(P'(x \cos \alpha - y \sin \alpha, x \sin \alpha + y \cos \alpha)\). Dengan demikian, diperoleh persamaan-persamaan berikut <br>
+                        \(x'=x \cos \alpha - y \sin \alpha \) <br>
+                        \(y'=x \sin \alpha + y \cos \alpha \) <br>
+                        Persamaan dalam bentuk matriks : \(\begin{align} \begin{pmatrix}x' \\ y'\end{pmatrix}  &=\begin{pmatrix}x \cos \alpha - y \sin \alpha \\ x \sin \alpha + y \cos \alpha \end{pmatrix} \\&=\begin{pmatrix}\cos \alpha & -\sin \alpha \\ \sin \alpha & \cos \alpha \end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix} \end{align}\) <br>
+                        Jadi, matirks \(\begin{pmatrix}\cos \alpha & -\sin \alpha \\ \sin \alpha & \cos \alpha \end{pmatrix}\) merupakan matriks yang bersesuaian dengan rotasi sebesar \(\alpha\) dengan titik pusat \(O(0,0)\).
+                     
+                </ol>
 
-          </div>
+
+      <div class="d-grid gap-2 d-md-block position-relative">
+        <a href="/transformasi/refleksi.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Refleksi</button></a>
+        <a href="/transformasi/dilatasi.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Dilatasi</button></a>
         </div>
-      </div>
-    </section>
-    <section style="padding-bottom: 7rem">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="d-grid gap-2 d-md-block position-relative">
-              <a href="/transformasi/refleksi.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Refleksi</button></a>
-              <a href="/transformasi/dilatasi.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Dilatasi</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+</div>
+</section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- footer start -->
