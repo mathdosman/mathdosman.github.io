@@ -87,20 +87,134 @@ Dilatasi (Perkalian)
         \end{align}\)
        </p>
 <p>Jadi, matriks \(\begin{pmatrix}k&0 \\ 0&k \end{pmatrix}\) merupakan matriks yang bersesuaian dengan dilatasi terhadap titik pusat \(O(0,0)\) dengan faktor skala \(k\). </p>
-</ol>
+
 <div class="row p-2 justify-content-center">
   <div class="col-md border">
     <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 4.1 </b>
     </div>
-    <p class="fst-italic bg-warning">Tentukan bayangan titik \(P(2,6)\) jika diputar   sebesar \(30^{\circ}\) yang searah dengan arah jarum jam dan berpusat titik \(O(0,0)\) 
+    <p class="fst-italic">Tentukan bayangan titik-titik  \(A(2,3)\), \(B(3,-1)\), dan \(A(4,2)\) oleh dilatasi \([O,2]\) 
     </p>
     <b>JAWABAN</b> <br>
     <p>
-    ccccccccccccccccccccccccccccc
+    Matriks dari ketiga titik tersebut adalah \(\begin{pmatrix}2&3&4 \\ 3&-1&2 \end{pmatrix}\). <br>
+    Bayangan titiknya <div class="overflow-auto">\(=\begin{pmatrix}2&0 \\ 0&2 \end{pmatrix}\begin{pmatrix}2&3&4 \\ 3&-1&2 \end{pmatrix}=\begin{pmatrix}4&6&8 \\ 6&-2&4 \end{pmatrix} \) </div><br>
+    Jadi, bayangan titik \(A\), \(B\), dan \(C\) adalah titik \(A'(4,6) \), \(B'(6,-2)\), dan \(C'(8,4)\)
     </p>
   </div>
 </div>
+<p>
+  Dilatasi merupakan transformasi non-isometri sehingga akan mengubah ukuran suatu bangun datar. Dalam bentuk umumnya, jika matriks transformasi \(\begin{pmatrix}a&b \\ c&d \end{pmatrix} \) memetakan bangun \(B\) ke bangun \(B'\), maka: <br>
+  Luas bangun \(B'=\begin{vmatrix}a&b \\ c&d \end{vmatrix} \times \text{luas bangun }B\)
+</p>
+<div class="row p-2 justify-content-center">
+  <div class="col-md border">
+    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 4.2 </b>
+    </div>
+    <p class="fst-italic">Diketahui koordinat titik-titik sudut \(\bigtriangleup ABC\) adalah\(A(1,0) \), \(B(3,0) \), dan \(C(3,3) \). Jika bayangan titik-titik \(A\), \(B\), dan \(C\) oleh dilatasi pusat \(O(0,0)\) dengan faktor skala 4 adalah \(A'\), \(B'\) dan \(C'\), tentukan: <br>
+      a. luas \(\bigtriangleup ABC\) <br>
+      b. luas \(\bigtriangleup A'B'C'\)
+    </p>
+    <b>JAWABAN</b> <br>
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          \(\begin{align} L_{\bigtriangleup ABC} &=\frac{1}{2}\times \text{alas} \times \text{tinggi}\\&= \frac{1}{2} \times 2 \times 3 \\ &=3  \end{align}\) <br>
+          Matriks dilatasinya adalah \(\begin{pmatrix}4&0 \\ 0&4 \end{pmatrix}\) <br>
+          \(\begin{align} L_{\bigtriangleup A'B'C'}&= \begin{vmatrix}4&0 \\ 0&4 \end{vmatrix} \times L_{\bigtriangleup ABC}\\&=(16-0) \times 3 \\ &= 48 \end{align}\)
+          </p>
+      </div>
+      <div class="col-md">
+        <img src="/transformasi/img/dilatasi2.png" alt="dilatasi2" class="img-fluid">
+      </div>
+    </div>
 
+  </div>
+</div>
+<!-- contoh 4.3 -->
+<div class="row p-2 justify-content-center">
+  <div class="col-md border">
+    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 4.3 </b>
+    </div>
+    <p class="fst-italic">Segitiga \(ABC\) dengan \(A(2,1)\), \(B(6,1)\), dan \(C(6,4)\) ditransformasikan dengan matriks transformasi \(\begin{pmatrix}3&2 \\ 1&2 \end{pmatrix}\). <br>
+      Tentukan luas hasil transformasi segitiga \(ABC\).
+    </p>
+    <b>JAWABAN</b> <br>
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          Berdasarkan gambar di samping: <br>
+          \(\begin{align} L_{\bigtriangleup ABC} &=\frac{1}{2}\times \text{alas} \times \text{tinggi}\\&= \frac{1}{2} \times 4 \times 3 \\ &=6  \end{align}\) <br>
+          Jadi, luas hasil transformasi \(\bigtriangleup ABC\) adalah <br>
+          \(\begin{align} L_{\bigtriangleup A'B'C'}&= \begin{vmatrix}3&2 \\ 1&2 \end{vmatrix} \times L_{\bigtriangleup ABC}\\&=(6-2) \times 6 \\ &= 24 \end{align}\)
+          </p>
+      </div>
+      <div class="col-md">
+        <img src="/transformasi/img/dilatasi3.png" alt="dilatasi3" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end contoh 4.3 -->
+  <li class="fst-italic fw-bold"> Dilatasi Pusat \((a,b)\) dengan Faktor Skala \(k\) </li>
+<p>
+  Sama halnya dengan mendapatkan rumusan rotasi dengan titik pusat \((a,b)\), dilatasi dengan titik pusat \((a,b)\) terlebih dahulu kita translasikan titik \((a,b)\) ke pusat \(O(0,0)\) dan titik \((x,y)\) ditranslasi \(\begin{pmatrix}-a\\-b \end{pmatrix} \), karena kita telah menemukan rumusan dilatasi dengan pusat \(O(0,0)\), maka pada rumus berpusat \((0,0)\), setiap \(x\) diganti menjadi \((x-a)\) dan setiap \(y\) diganti menjadi \((y-b)\). Dengan demikian rumus untuk dilatasi \([(a,b),k] \) adalah: <br>
+  \(x'-a=k(x-a) \) <br>
+  \(y'-b=k(y-b) \) <br>
+  Persamaan dalam bentuk matriksnya: 
+  <div class="text-center">
+    $$\begin{pmatrix}x'-a \\ y'-b \end{pmatrix}=\begin{pmatrix}k&0 \\ 0&k \end{pmatrix}\begin{pmatrix}x-a \\ y-b \end{pmatrix}$$ 
+    atau 
+    $$\begin{pmatrix}x' \\ y' \end{pmatrix}=\begin{pmatrix}k&0 \\ 0&k \end{pmatrix}\begin{pmatrix}x-a \\ y-b \end{pmatrix}+\begin{pmatrix}a\\b \end{pmatrix}$$
+  </div>
+</p>
+<div class="row p-2 justify-content-center">
+  <div class="col-md border">
+    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 4.4 </b>
+    </div>
+    <p class="fst-italic">Tentukan bayangan titik-titik \(A(3,5)\) oleh dilatasi \([(2,1),-2] \).
+    </p>
+    <b>JAWABAN</b> <br>
+        <p>
+          \(\begin{align}
+          A' &= \begin{pmatrix}-2&0 \\ 0&-2 \end{pmatrix}\begin{pmatrix}3-2 \\ 5-1 \end{pmatrix}+\begin{pmatrix}2\\1 \end{pmatrix} \\ &= \begin{pmatrix}-2&0 \\ 0&-2 \end{pmatrix}\begin{pmatrix}1\\4 \end{pmatrix}+\begin{pmatrix}2\\1 \end{pmatrix} \\
+          &=\begin{pmatrix}-2\\-8 \end{pmatrix}+\begin{pmatrix}2\\1 \end{pmatrix} \\ &= \begin{pmatrix}0\\-7 \end{pmatrix}
+          \end{align}\) <br>
+          Jadi, bayangan titik \(A(3,5)\) adalah \(A'(0,-7)\).
+          </p>
+  </div>
+</div>
+
+
+</ol>
+<div class="row justify-content-center ms-4 mb-2">
+  <div class="col-md border">
+      <div class="badge bg-danger text-wrap fs-6" style="width: 8rem"><b> Evaluasi 4.1 </b></div>
+  <ol>
+      <li>Tentukan bayangan titik \(A(3,5)\) oleh dilatasi:
+          <div class="row">
+              <div class="col-md-2">a. \([O,-2]\)</div>
+              <div class="col-md-2">b. \([O,3]\)</div>
+              <div class="col-md-2">c. \([O,4] \)</div>
+          </div>
+      </li>
+      <li>Tentukan bayangan titik-titik \(A(2,5)\) oleh dilatasi:
+          <div class="row">
+              <div class="col-md-2">a. \([(2,3),2] \)</div>
+              <div class="col-md-2">b. \([(3,-1),-1] \)</div>
+              <div class="col-md-2">b. \([(1,-2),3] \)</div>
+          </div>
+      </li>
+      <li>Bayangan titik-titik \(A(2,1)\) dan \(B(3,2) \) oleh suatu dilatasi berturut-turut adalah \(A'(-1,1)\) dan \(B'(-3,-1)\). Tentukan pusat dan faktor skala dilatasi tersebut!
+      </li>
+      <li>Titik-titik sudut persegipanjang \(ABCD\) adalah \(A(2,-1)\), \(B(2,1)\), \(C(-2,1)\), dan \(D(-2,-1)\) <br>
+        a. Hitunglah luas persegi panjang \(ABCD\) <br>
+        b. Jika \(A'\), \(B'\), \(C'\) dan \(D'\) adalah bayangan titik-titik \(A,B,C\) dan \(D\) oleh transformasi \(\begin{pmatrix}1&2 \\ 3&4 \end{pmatrix}\). Tentukan luas bangun \(A'B'C'D'\)!
+      </li>
+      <li>Bayangan titik-titik \(A(-1,0)\), \(B(3,0)\), dan \(C(2,4)\) oleh transformasi \(\begin{pmatrix}2&4 \\ 3&6 \end{pmatrix} \) adalah \(A'\), \(B'\), dan \(C'\). Tunjukan bahwa luas bangun \(A'B'C'\) adalah \(0\). Apa yang dapat disimpulkan dari luas tersebut?</li>
+  </ol>
+  </div>
+</div>
 
       <div class="d-grid gap-2 d-md-block position-relative">
         <a href="/transformasi/rotasi.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Rotasi</button></a>
