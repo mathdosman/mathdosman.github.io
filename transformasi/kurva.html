@@ -63,13 +63,100 @@
       </div>
     </nav>
     <!-- navbar end -->
-<section style="padding-top: 6rem; padding-bottom: 5rem">
+<section style="padding-top: 6rem; padding-bottom: 7rem">
     <div class="container">
 
 <h3>
 Transformasi Suatu Kurva
 </h3>
-                
+<p> Sebelumnya kita hanya mempelajari cara menentukan transformasi suatu titik, sekarang kita akan menentukan transformasi suatu kurva. Jika ingin mencari bayangan suatu kurva yang memiliki persamaan \(y=f(x) \) oleh suatu transfromasi, maka dari transformasi tersebut lebih dahulu kita tentukan \(x\) dan \(y\) dalam bentuk \(x'\) dan \(y'\), kemudian bayangannya diperoleh dengan mensubstitusikan \(x\) dan \(y\) ke \(y=f(x)\) dari transformasi tersebut. 
+</p>
+<div class="row p-2 justify-content-center">
+  <div class="col-md border">
+    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 5.1 </b>
+    </div>
+    <p class="fst-italic">Tentukan bayangan garis \(2x+3y+4=0 \) jika ditransformasikan dengan \(\begin{pmatrix}1&2 \\ 0&1 \end{pmatrix} \) 
+    </p>
+    <b>JAWABAN</b> <br>
+        <p>
+          Menentukan \(x\) dan \(y\) <br>
+          \(\begin{align} 
+          \begin{pmatrix}x'\\y' \end{pmatrix} 
+          &= \begin{pmatrix}1&2 \\ 0&1 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix}
+          \\\begin{pmatrix}x\\y \end{pmatrix} &=\begin{pmatrix}1&2 \\ 0&1 \end{pmatrix}^{-1}\begin{pmatrix}x'\\y' \end{pmatrix} 
+          \\ &= \frac{1}{1-0}\begin{pmatrix}1&-2\\0&1 \end{pmatrix}\begin{pmatrix}x'\\y' \end{pmatrix} \\&=
+          \begin{pmatrix}x'-2y' \\y' \end{pmatrix}
+          \end{align}\) <br>
+          Diperoleh \(x=x'-2y' \) dan \(y=y'\) <br>
+          Substitusikan \(x=x'-2y'\) dan \(y=y'\) ke persamaan \(2x+3y+4=0\), maka: <br>
+          \(\begin{align}
+          2(x'-2y')+3y'+4&=0 \\
+          2x'-4y'+3y'+4 &= 0 \\
+          2x'-y'+4 &= 0
+          \end{align}\) <br>
+          <i>(tanda petik satu merupakan tanda dari bayangannya)</i> <br>
+          Jadi, bayangan garis \(2x+3y+4=0 \) adalah \(2x-y+4=0\)        
+          </p>       
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 border border-dark rounded-3">
+    Bayangan garis \(y=mx+c\) oleh translasi \(T=\begin{pmatrix} a\\b\end{pmatrix}\) dapat ditentukan oleh: <br>
+$$y-b=m(x-a)+c$$
+Jika diperumum lagi untuk suatu kurva bila ditranslasi oleh \(T=\begin{pmatrix} a\\b\end{pmatrix}\), maka dapat ditentukan 
+<ul>
+  <li>\(y=px^2+qx+r \Rightarrow \)\(\:y-b=p(x-a)^2 + q(x-a)+r \) </li>
+  <li>\(x^2+y^2=r^2 \Rightarrow \) \((x-a)^2 +(y-b)^2=r^2\) </li>
+</ul>
+  </div>
+</div>
+<div class="row p-2 justify-content-center">
+  <div class="col-md border">
+    <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 5.2 </b>
+    </div>
+    <p class="fst-italic">Garis \(2x-3y=6 \) ditranslasikan dengan \(T=\begin{pmatrix} 3\\-2\end{pmatrix}\), Tentukan persamaan bayangannya.
+    </p>
+    <b>JAWABAN</b> <br>
+        <p>
+          <b>Ada 2 cara untuk menyelesaikan soal ini.</b> <br>
+          <i>Cara 1</i> <br>      
+          </p>
+          <p>
+            Bayangan garis \(2x-3y=6 \) oleh translasi \(T=\begin{pmatrix} 3\\-2\end{pmatrix}\) adalah <br>
+\(\begin{align}
+     2(x-3)-3(y-(-2)) &=6 \\
+     2(x-3)-3(y+2) &=6 \\
+     2x-6-3y-6 &= 6 \\
+     2x-3y &=18
+\end{align}\)
+          </p>
+          <p>
+            <i>Cara 2</i> <br>
+            Terlebih dahulu kita tentukan 2 buah titik yang terletak pada garis \(2x-3y=6\). Untuk memudahkan kita pilih titik potong sumbu-X dan sumbu-Y. <br>
+            \(y=0 \Rightarrow x=3 \), diperoleh titik \(A(3,0)\) <br>
+            \(x=0 \Rightarrow y=-2 \), diperoleh titik \(B(0,-2) \) <br>
+            Matriks kedua titik tersebut adalah  \(\begin{pmatrix}3&0\\0&-2 \end{pmatrix}\) <br>
+            Matriks titik bayangannya adalah
+            <div class="overflow-auto"> \(\begin{pmatrix}3&3\\-2&-2 \end{pmatrix}+ \begin{pmatrix}3&0\\0&-2 \end{pmatrix}= \begin{pmatrix}6&3\\-2&-4 \end{pmatrix}\)</div>  
+            Diperoleh titik \(A'(6,-2) \) dan \(B'(3,-4) \). <br>
+            Persamaan garis yang melalui titik \(A'\) dan \(B'\) adalah
+            <div class="overflow-auto">
+            \(\begin{align}
+              \frac{y+2}{-4+2}=\frac{x-6}{3-6} &\Leftrightarrow \frac{y+2}{-2} =\frac{x-6}{-3} \\
+              &\Leftrightarrow \frac{y+2}{2} = \frac{x-6}{3} \\
+              &\Leftrightarrow 3y+6 = 2x-12 \\
+              &\Leftrightarrow 2x-3y = 18
+            \end{align}\)
+          </div>
+          Jadi, persamaan garis bayangannya adalah \(2x-3y=18\) <br>
+          <img src="/transformasi/img/transkurva1.png" alt="transformasiKurva1">
+
+
+
+          </p>   
+  </div>
+</div>
 
 
       <div class="d-grid gap-2 d-md-block position-relative">
@@ -82,7 +169,7 @@ Transformasi Suatu Kurva
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- footer start -->
-    <footer class="bg-primary text-center text-white p-1">
+    <footer class="bg-primary text-center text-white p-1 fixed-bottom">
       <p>
         Created with
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
