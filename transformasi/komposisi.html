@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
     <script>
@@ -26,8 +24,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971"
-    crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971" crossorigin="anonymous"></script>
     <title>Komposisi</title>
   </head>
   <body>
@@ -67,37 +64,66 @@
       </div>
     </nav>
     <!-- navbar end -->
-<section style="padding-top: 6rem; padding-bottom: 5rem">
-    <div class="container">
 
-<h3>
-Komposisi Transformasi
-</h3>
-                
-
-
+    <div class="container" style="padding-top: 7rem">
+      <h3>Komposisi Transformasi</h3>
+      <div class="row justify-content-center">
+        <div class="col-sm-9">
+          <ol>
+            <li>Pengertian Komposisi Transformasi</li>
+            <p>
+              Materi yang berkaitan materi kali ini adalah komposisi dua fungsi, yaitu \(f \circ g (x)\) artinya sama dengan \(f(g(x))\). Arti komposisi pada fungsi dan pada transformasi adalah sama, sehingga \(T_2 \circ T_1
+              (x,y)=T_2(T_1(x,y)) \) artinya \(T_2 \circ T_1 \) artinya \(T_1\) dilanjutkan oleh \(T_2\) seperti terlihat pada skema dibawah ini. <br />
+              <img src="/transformasi/img/komposisi1.png" alt="komposisi1" />
+              Agar dapat memahami komposisi lebih jauh, perhatikan beberapa contoh soal berikut.
+            </p>
+            <div class="row p-2 justify-content-center">
+              <div class="col-md border">
+                <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 6.1 </b></div>
+                <br />
+                <p class="fst-italic">Tentukan bayangan titik \(A(2,3)\) jika ditransformasikan dengan \(T_1=\begin{pmatrix} 2 \\ -1 \end{pmatrix}\), kemudian dilanjutkan oleh translasi \(T_2 = \begin{pmatrix} 1\\ 4\end{pmatrix}\).</p>
+                <b>JAWABAN:</b> <br />
+                <p>
+                  Karena \(T_2\) yang melanjutkan, maka pada penulisan komposisi, \(T_2\) berada disebelah kiri. <br />
+                  \(\begin{align} T_2 \circ T_1 (2,3) &= T_2(T_1(2,3)) \\ &= T_2(2+2, 3-1) \\ &=T_2 (4,2) \\&= (4+1, 2+4) \\ &=(5,6) \end{align}\) <br />
+                  Jadi, bayangan titik \(A(2,3)\) adalah \(A'(5,6)\)
+                </p>
+              </div>
+            </div>
+          </ol>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<section style="padding-bottom: 5rem;">
       <div class="d-grid gap-2 d-md-block position-relative">
         <a href="/transformasi/kurva.html"> <button class="btn btn-primary position-absolute top-0 start-0" type="button">Transformasi Kurva</button></a>
         <a href="/transformasi/daftarsoal.html"> <button class="btn btn-primary position-absolute top-0 end-0" type="button">Latihan Soal</button></a>
-        </div>
-</div>
+      </div>
+    </div>
 </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- footer start -->
-    <footer class="bg-primary text-center text-white d-flex justify-content-center">
-      <p>
-        Created with
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-        </svg>
-        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold">I Putu Darma Putra</a>
-      </p>
-    </footer>
+    <div class="row justify-content-center">
+      <footer class="bg-primary text-center text-white d-block justify-content-center position-relative">
+        <p>
+          Created with
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+          </svg>
+          by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold">I Putu Darma Putra</a>
+        </p>
+      </footer>
+    </div>
     <!-- footer end -->
-    <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-4649430696681971">
-</amp-auto-ads>
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-4649430696681971"> </amp-auto-ads>
   </body>
 </html>
