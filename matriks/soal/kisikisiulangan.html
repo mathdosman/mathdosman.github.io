@@ -52,14 +52,15 @@
     </nav>
     <!-- navbar end -->
 
-   
     <!-- START FORM KUIS -->
-    <section id="kontak" style="padding-top: 7rem">
-      <div class="container">
+    <section id="kontak">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-md-9" style="padding-top: 5rem">
         <div class="row mb-3">
           <div class="col text-center">
             <h2>Kisi-kisi Ulangan Matriks</h2>
-           <i>Math_Dosman</i>
+            <i>Math_Dosman</i>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -87,7 +88,7 @@
                 </select>
               </div>
               <hr />
-             
+              
               <ol type="1">
                 <li>Diketahui matriks \(A =\begin{pmatrix}3&-2&0 \\ -1&-4&3 \\4&2&1 \end{pmatrix}\) elemen pada baris kedua adalah . . .</li>
                 <input type="radio" name="soal1" value="0" />
@@ -452,11 +453,72 @@
             </form>
           </div>
         </div>
+          </div>
+          <div class="col-md-3">
+            <div class="sticky-top" style="padding-top: 5rem">
+              <!--======tombol offcanvas ========-->
+              <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">KLIK UNTUK MELIHAT KUNCI JAWABAN</button>
+              <!-- =====tombol offcanvas======= -->
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- SOAL KUIS END-->
-    <hr />
-   
+<!-- SOAL KUIS END-->
+    <!-- START OFFCANVAS KUNCI -->
+    <!-- ================================================================================================================================ -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          KUNCI JAWABAN <br />
+          Latihan Soal Matriks II
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col">
+            <ol>
+              <li>B</li>
+              <li>C</li>
+              <li>B</li>
+              <li>E</li>
+              <li>A</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="6">
+              <li>C</li>
+              <li>E</li>
+              <li>A</li>
+              <li>D</li>
+              <li>B</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="11">
+              <li>A</li>
+              <li>A</li>
+              <li>E</li>
+              <li>A</li>
+              <li>C</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="16">
+              <li>D</li>
+              <li>C</li>
+              <li>E</li>
+              <li>B</li>
+              <li>E</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================================================================================ -->
+    <!-- END KUNCI -->
+
     <script>
       function kirim() {
         const soal1 = document.querySelector('#soal1');
