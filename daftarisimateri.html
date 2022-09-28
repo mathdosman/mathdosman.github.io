@@ -50,15 +50,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">tes</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> MATEMATIKA </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soal </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/daftarisimateri.html">DAFTAR ISI MATERI</a></li> -->
+                <li><a class="dropdown-item" href="/kumpulanSoal/">Soal Latihan</a></li>
+                <li><a class="dropdown-item" href="/soalUlangan/">Soal Ulangan</a></li>
               </ul>
             </li>
           </ul>
@@ -88,7 +89,20 @@
               <button type="button" class="list-group-item list-group-item-action">Fungsi Kuadrat</button>
               <button type="button" class="list-group-item list-group-item-action">Pertidaksamaan Linear Dua Variabel</button>
               <button type="button" class="list-group-item list-group-item-action">Program Linear</button>
-              <a href="/kumpulanMateri/matriks/" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold">Matriks Dasar & Operasi Matriks</button></a>
+                  <!-- Start Matriks -->
+              <button class="btn list-group-item list-group-item-action fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Matriks Dasar & Operasi Matriks
+                </button>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <ul class="list-group">
+                   <a href="/kumpulanMateri/matriks/" style="text-decoration: none;"> <li class="list-group-item">Materi</li> </a>
+                   <a href="/kumpulanSoal/matriks/" style="text-decoration: none;"> <li class="list-group-item">Soal Latihan</li> </a>
+                   <a href="/soalUlangan/matriks/" style="text-decoration: none;"> <li class="list-group-item">Soal Ulangan</li> </a>
+                  </ul>
+                </div>
+              </div>
+              <!-- end Matriks -->
               <a href="/transformasi/" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold">Transformasi Geometri</button></a>
               <button type="button" class="list-group-item list-group-item-action">Barisan dan Deret</button>
               <button type="button" class="list-group-item list-group-item-action">Limit Fungsi Aljabar</button>
