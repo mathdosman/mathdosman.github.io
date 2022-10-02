@@ -66,7 +66,7 @@
             <hr>
 <h1 class="text-center">www.MathDosman.site</h1>
             <hr>
-      <section id="pengertian" style="padding-top: 4rem;">
+      <section id="pengertian">
         <hr>
         <hr>
         <h1 class="text-primary"><b>I) Pengertian, Notasi, dan Ordo suatu Matriks</b></h1>
@@ -210,7 +210,7 @@
       </div>
       </section>
 
-  <section style="padding-top: 4rem;" id="jenisMatriks">
+  <section  id="jenisMatriks">
     <div class="row">
       <div class="col">
         <div class="text-primary">
@@ -361,7 +361,7 @@
       </div>
     </section>
 
-<section style="padding-top: 4rem;" id="transpose">
+<section id="transpose">
 <div class="row">
   <div class="col">
     <div class="text-primary"><hr>
@@ -427,9 +427,7 @@
   </div>
 </div>
     </section>
-<hr>
-<hr>
-    <section style="padding-top: 4rem;" id="kesamaanDuaMatriks" >
+    <section id="kesamaanDuaMatriks" >
         <div class="row">
           <div class="col text-primary fw-bold">
             <hr>
@@ -555,7 +553,7 @@
         </div>
     </section>
 
-    <section id="operasiMatriks" style="padding-top: 4rem;">
+    <section id="operasiMatriks" >
             <div class="col-md text-primary">
               <hr>
               <hr>
@@ -820,7 +818,7 @@
         </div>
     </section>
 
-    <section id="perkalianMatriks" style="padding-top: 4rem;" >
+    <section id="perkalianMatriks"  >
       <div class="text-primary fw-bold">
         <hr>
         <hr>
@@ -1099,7 +1097,7 @@
     </section>
 <hr>
 <hr>
-<section id="inversMatriks" style="padding-top: 4rem;">
+<section id="inversMatriks" >
   <div class="text-primary">
     <hr>
     <hr>
@@ -1570,7 +1568,7 @@
     <!----container-->
 </section>
 
-<section id="penerapanMatriks" style="padding-top: 4rem;">
+<section id="penerapanMatriks">
   <div class="text-primary">
     <hr>
     <hr>
@@ -1621,7 +1619,7 @@
             </div>
             <!-- end contoh -->
             <li class="fw-bold">Menyelesaikan Sistem Persamaan Linear</li>
-            <span class="fst-italic"> a. Metode Matriks Invers </span>
+            <span class="fst-italic"> a. Metode Matriks Invers </span> <br>
             Pada bagian ini akan dibahas metode matriks invers untuk menyelesaiakan sistem persamaan linear dua variabel. Bentuk umum sistem persamaan linear dua variabel adalah
             <br />
             \(\begin{cases}\begin{matrix}ax+by=p \\ cx+dy=q \end{matrix}\end{cases}\)
@@ -1629,18 +1627,161 @@
             dengan \(a, b, c, d, \in R\)
             <br />
             Sekarang akan diselesaikan sistem persamaan linear di atas dengan metode matriks dengan langkah-langkah sebagai berikut.
-            <ol>
-              <li type="a">Persamaan di atas diubah menjadi persamaan matriks</li>
+            <ol type="i">
+              <li >Persamaan di atas diubah menjadi persamaan matriks</li>
               \(\begin{pmatrix}a&b\\c&d \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix}=\begin{pmatrix}p\\q \end{pmatrix}\)
               <li>Persamaan matriks di atas memenuhi persamaan matriks \(AX=B\), maka penyelesaian bentuk \(AX=B\) adalah \(X=A^{-1}B). Jadi,</li>
               \(\begin{pmatrix}x\\y \end{pmatrix}=\frac{1}{ad-bc}\begin{pmatrix}d&-b \\ -c&a \end{pmatrix}\begin{pmatrix}q\\p \end{pmatrix}\)
             </ol>
             <div class="row p-2 justify-content-center">
-              <div class="col-md-9">
+              <div class="col-md-9 border">
                 <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 8.2 </b></div>
-                <p class="fst-italic">CONTOH 3.27 salin</p>
+                <p class="fst-italic">Tentukan penyelesaian dari sistem persamaan linear berikut dengan cara matriks invers
+                \(\left\{\begin{matrix}
+                3x-2y=5\\ 
+                y+2x=8
+                \end{matrix}\right.\)                
+              </p>
+              <p><b>JAWAB:</b> <br>
+              Sistem persamaan linear di atas dituliskan dalam persamaan matriks <br>
+              \(\begin{pmatrix}3&-2\\2&1 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix}=\begin{pmatrix}5\\8 \end{pmatrix} \), sehingga <br>
+              \(\begin{align}
+              \begin{pmatrix}x\\y \end{pmatrix} &= \frac{1}{3.1-(-2)(2)}\begin{pmatrix}1&2\\-2&3 \end{pmatrix}\begin{pmatrix}5\\8 \end{pmatrix} \\ &= \frac{1}{7} \begin{pmatrix}21\\14 \end{pmatrix} \\ &= \begin{pmatrix}3\\2 \end{pmatrix}
+              \end{align}\)
+              <br>
+                Jadi, himpunan penyelesaian dari sistem persamaan linear diatas adalah \(\begin{Bmatrix}(3,2) \end{Bmatrix} \)
+              </p>
               </div>
             </div>
+            <span class="fst-italic"> b. Metode Determinan </span> <br>
+            1) Sistem Persamaan Linear Dua variabel <br>
+            Perhatikan bentuk umum persamaan linear berikut!
+            \(\left\{\begin{matrix}
+            ax+by=p\\ 
+            cx+dy=q
+            \end{matrix}\right.\)
+            dengan metode eliminasi maka didapatkan
+            <div class="overflow-auto">
+              \(\begin{align}
+              ax+by=p |\times c| \to &acx+bcy = pc \\
+              cx+dy=q |\times a| \to &\underline{acx+ady =qa} \; \underset{-}{} \\
+              &bcy-ady=pc-qa  \\
+              &(ad-bc)y=aq-cp \\
+              \end{align}\) <br>
+              \(\begin{align}
+              y =\frac{aq-cp}{ad-bc} = \frac{\begin{vmatrix}a&p\\c&q \end{vmatrix}}{\begin{vmatrix}a&b\\c&d \end{vmatrix}}
+              \end{align}\) <br>
+              Dengan cara yang sama akan didapatkan nilai \(x\). <br>
+              \(\begin{align} x =\frac{pd-qb}{ad-bc} = \frac{\begin{vmatrix}p&b\\q&d \end{vmatrix}}{\begin{vmatrix}a&b\\c&d \end{vmatrix}}\end{align}\) <br>
+              Dari pembahasan di atas, maka nilai \(x\) dan \(y\) dapat dicari dengan cara \(\begin{align} x = \frac{\begin{vmatrix}p&b\\q&d \end{vmatrix}}{\begin{vmatrix}a&b\\c&d \end{vmatrix}}\end{align}\) dan \(\begin{align}
+              y = \frac{\begin{vmatrix}a&p\\c&q \end{vmatrix}}{\begin{vmatrix}a&b\\c&d \end{vmatrix}}
+              \end{align}\) <br>
+              Metode di atas disebut dengan metode determinan atau <i>metode Cramer.</i> <br>
+              Rumus di atas dapat ditulis sebagai
+              $$x=\frac{D_x}{D}, y=\frac{D_y}{D}$$
+              dengan:
+              <ul >
+                <li>\(D=ad-bc \), adalah determinan matriks koefisien persamaan linear. </li>
+                <li>\(D_x=pd-qb\), adalah determinan matriks koefisien yang kolom pertama diganti dengan matriks \(B\). </li>
+                <li>\(D_y=aq-cp\), adalah determinan matriks koefisien yang kolom kedua diganti dengan matriks \(B\).</li>
+              </ul>
+            </div>
+            <div class="row p-2 justify-content-center">
+              <div class="col-md-9 border">
+                <div class="badge bg-primary text-wrap fs-6" style="width: 8rem"><b> CONTOH 8.3 </b></div>
+                <p class="fst-italic">Tentukan penyelesaian dari sistem persamaan linear berikut dengan metode determinan!
+                \(\left\{\begin{matrix}
+                3x-y=16\\ 
+                2x+5y=5
+                \end{matrix}\right.\)                
+              </p>
+              <p><b>JAWAB:</b> <br>
+              Sistem persamaan linear di atas dituliskan dalam persamaan matriks <br>
+              \(\begin{pmatrix}3&-1\\2&5 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix}=\begin{pmatrix}16\\5 \end{pmatrix} \), sehingga <br>
+              \(\begin{align}
+              D &= \begin{pmatrix}3&-1\\2&5 \end{pmatrix} \\ & =
+              3 \times 5 - (-1)\times2 \\ &= 17
+              \end{align}\)
+              \(\begin{align}
+              D_x &= \begin{pmatrix}16&-1\\5&5 \end{pmatrix} \\ & =
+              16 \times 5 - (-1)\times 5 \\ &= 85
+              \end{align}\)
+              \(\begin{align}
+              D_y &= \begin{pmatrix}3&16\\2&5 \end{pmatrix} \\ & =
+              3 \times 5 - 16 \times2 \\ &= -17
+              \end{align}\) <br>
+              Sehingga \(\begin{align}x=\frac{D_x}{D}=\frac{85}{17}=5 \end{align}\) <br>
+              \(\begin{align}y=\frac{D_y}{D}=\frac{-17}{17}=-1 \end{align}\)
+              <br>
+                Jadi, himpunan penyelesaian dari sistem persamaan linear diatas adalah \(\begin{Bmatrix}(5,-1) \end{Bmatrix} \)
+              </p>
+              </div>
+            </div>
+            2) Sistem Permsaan Linear Tiga Variabel <br>
+              Penyelesaian sistem persamaan tiga variabel sama dengan penyelesaian sistem persamaan dua variabel, perbedaannya hanya terletak pada langkah pencarian determinannya. Matriks \(3 \times 3\) lebih cenderung menggunakan <i>metode Sarrus</i>.
+              Bentuk umum sistem persamaan linear tiga variabel adalah sebagai berikut <br>
+              \( \left\{\begin{matrix}ax+by+cz=p \\dx+ey+fz=q\\gx+hy+iz=r \end{matrix}\right.\) <br>
+              Sistem persamaan di atas dapat dinyatakan dalam bentuk matriks sebagai berikut. <br>
+              \(\begin{pmatrix}a&b&c\\d&e&f\\g&h&i \end{pmatrix}\begin{pmatrix}x\\y\\z \end{pmatrix}=\begin{pmatrix}p\\q\\r \end{pmatrix}\) <br>
+              Dari matriks koefisien di atas dapat ditentukan nilai \(D\), \(D_x\), \(D_y\) dan \(D_z\) <br>
+              \(D=\begin{vmatrix}a&b&c\\d&e&f\\g&h&i \end{vmatrix}\),
+              \(D_x=\begin{vmatrix}p&b&c\\q&e&f\\r&h&i \end{vmatrix}\),
+              \(D_y=\begin{vmatrix}a&p&c\\d&q&f\\g&r&i \end{vmatrix}\),
+              \(D_z=\begin{vmatrix}a&b&p\\d&e&q\\g&h&r \end{vmatrix}\),
+              <br>
+              Jadi, Penyelesaian sistem persamaan linear tiga variabel tersebut adalah
+              $$x=\frac{D_x}{D};y=\frac{D_y}{D};\text{ dan }z=\frac{D_z}{D}$$
+<br>
+            <div class="row justify-content-center">
+              <div class="col-md border border-dark">
+                <div class="badge bg-danger text-wrap fs-6" style="width: 16rem">LATIHAN SOAL 8.1</div>
+                <ol type="1">
+                  <li>Jika \(X \) adalah matriks berordo \(2 \times 2\), tentukan \(X\) dari persamaan matriks berikut! </li>
+                  <div class="row">
+                    <div class="col">\(\text{a.  }\begin{pmatrix}3&4\\2&3 \end{pmatrix}X=\begin{pmatrix}1&2\\5&2 \end{pmatrix} \) <br>
+                      \(\text{b.  }X\begin{pmatrix}-2&-3\\1&-1 \end{pmatrix}X=\begin{pmatrix}0&-5\\10&-5 \end{pmatrix} \) <br>
+                      \(\text{c.  }\begin{pmatrix}1&2\\3&5 \end{pmatrix}X=\begin{pmatrix}-2&-4\\5&13 \end{pmatrix} \)
+                    </div>
+                    <div class="col">
+                      \(\text{c.  }\begin{pmatrix}2&1\\4&3 \end{pmatrix}X=\begin{pmatrix}2&5\\8&9 \end{pmatrix} \) <br>
+                      \(\text{d.  }X\begin{pmatrix}3&5\\4&7 \end{pmatrix}X=\begin{pmatrix}1&4\\2&5 \end{pmatrix} \) <br>
+                      \(\text{e.  }X\begin{pmatrix}-3&2\\4&5 \end{pmatrix}=\begin{pmatrix}2&7\\5&8 \end{pmatrix}+\begin{pmatrix}4&12\\14&10 \end{pmatrix} \)
+                    </div>
+                  </div>
+                  <li>Tulislah dalam bentuk persamaan matriks untuk sistem persamaan berikut!</li>
+                  <div class="row">
+                    <div class="col">
+                      \(\text{a.  } \left\{\begin{matrix}3x-2y=3 \\4x-y=14 \end{matrix}\right.\) <br>
+                      \(\text{b.  } \left\{\begin{matrix}8x=2y-1 \\10x=23-2y \end{matrix}\right.\)
+                    </div>
+                    <div class="col">\(\text{c.  } \left\{\begin{matrix}-5x-2y=0 \\2y+10x-23=0 \end{matrix}\right.\) <br>
+                      \(\text{d.  } \left\{\begin{matrix}2x=2y-1 \\3(x-1)=5(y-4) \end{matrix}\right.\)
+                    </div>
+                  </div>
+                  <li>Tentukan himpunan penyelesaian dari sistem persamaan dengan menggunakan determinan! </li>
+                  <div class="row">
+                    <div class="col">
+                      \(\text{a.  } \left\{\begin{matrix}x+y=7 \\-2x+5y=14 \end{matrix}\right.\) <br>
+                      \(\text{b.  } \left\{\begin{matrix}5x-2y+3z=5 \\x-3y+z=8 \\ 3x+2y-z=-1 \end{matrix}\right.\)
+                    </div>
+                    <div class="col">\(\text{c.  } \left\{\begin{matrix}5x+12y=23 \\x+2y=3 \end{matrix}\right.\) <br>
+                      \(\text{d.  } \left\{\begin{matrix}3x+2y-z=5 \\ 2x+3y+2z=12 \\ x-2y+3z=-3\end{matrix}\right.\)
+                    </div>
+                  </div>
+                  <li>Diketahui bentuk umum sistem persamaan linear dua variabel adalah </li>
+                  \( \left\{\begin{matrix}ax+by=k_1 \\cx+dy=k_2 \end{matrix}\right.\) <br>
+                  Jika, \(\begin{vmatrix}a&k_1 \\c&k_2 \end{vmatrix}=10 \), \(\begin{vmatrix}a&b \\c&d \end{vmatrix}=2 \) dan \(\begin{vmatrix}k_1&b \\k_2&d \end{vmatrix}=12 \), tentukan nilai \(x+y\) !
+                  <li>Pada sebuah toko, Iwan membeli 5 kemeja dan 4 celana dengan harga Rp 425.000,00. Pada toko yang sama Cindy membeli 4 kemeja dan 3 celana dengan harga Rp 330.000,00</li>
+                  <ol type="a">
+                    <li>Tentukan sistem pesamaan linear dua peubah \(x\) dan \(y\) yang dapat disusun dari persoalan di atas! </li>
+                    <li>Tentukan himpunan penyelesaian sistem persamaan linear yang diperoleh pada \(a\) dengan metode matriks!  </li>
+                    <li>Tentukan harga masing-masing celana dan baju pada toko tersebut! </li>
+                  </ol>
+                </ol>
+              </div>
+            </div>
+
+            
           </ol>
         </div>
       </div>
