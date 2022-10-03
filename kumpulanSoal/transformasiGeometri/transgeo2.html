@@ -102,7 +102,7 @@
                 <input type="radio" name="soal1" value="0" />
                 \((1,0) \)
                 <br />
-                <input type="radio" name="soal1" value="0" />
+                <input type="radio" name="soal1" value="10" id="soal1"/>
                 \((-5,14) \)
                 <br />
                 <input type="radio" name="soal1" value="0"  />
@@ -111,25 +111,36 @@
                 <input type="radio" name="soal1" value="0" />
                 \((1,14) \)
                 <br />
-                <input type="radio" name="soal1" value="10" id="soal1"/>
+                <input type="radio" name="soal1" value="0" />
                 \((1,-5) \)
                 <br>
-                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal1" aria-expanded="false" aria-controls="collapsesoal1">
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal1" aria-expanded="false" aria-controls="collapsesoal1" disabled>
                 Alternatif Penyelesaian:
                 </button>
                 <div class="collapse" id="collapsesoal1">
                   <div class="card card-body overflow-auto">
-                   Penyelesaian ketik disini
-                   <b class="text-end"> JAWABAN :  </b>
+                   Misal \(T=\begin{pmatrix}a\\b \end{pmatrix}\)
+                    maka
+                   \(\begin{align} A'&=T \circ A \\ \begin{pmatrix}-1\\6 \end{pmatrix} &=\begin{pmatrix}a\\b \end{pmatrix}+\begin{pmatrix}2\\-6 \end{pmatrix} \\ 
+                   \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}-1\\6 \end{pmatrix} - \begin{pmatrix}2\\-6 \end{pmatrix} \\
+                   \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}-3\\12 \end{pmatrix}
+                   \end{align}\)
+                   Sehingga
+                   \(\begin{align} 
+                   \begin{pmatrix}x'\\y' \end{pmatrix} &=\begin{pmatrix}-3\\12 \end{pmatrix}+\begin{pmatrix}-2\\2 \end{pmatrix} \\
+                   &= \begin{pmatrix}-5\\14 \end{pmatrix}
+                   \end{align}\)
+                   Jadi, bayangan titik B yaitu B' adalah (-5, 14)
+                   <b class="text-end"> JAWABAN : B</b>
                   </div>
                 </div>
                 <hr />
                 <!--========================= soal no 2 ===========================================================================-->
                 <li>Suatu translasi memetakan titik \((2,4) \) ke \((3,8) \). Translasi yang sama memetakan titik \((1,2) \) ke . . . </li>
-                <input type="radio" name="soal2" value="10" id="soal2" />
+                <input type="radio" name="soal2" value="0"  />
                 \((1,4) \)
                 <br />
-                <input type="radio" name="soal2" value="0" />
+                <input type="radio" name="soal2" value="10" id="soal2" />
                 \((2,6) \)
                 <br />
                 <input type="radio" name="soal2" value="0"  />
@@ -141,13 +152,24 @@
                 <input type="radio" name="soal2" value="0" />
                 \((6,14) \)
                 <br>
-                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal2" aria-expanded="false" aria-controls="collapsesoal2">
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal2" aria-expanded="false" aria-controls="collapsesoal2" disabled>
                 Alternatif Penyelesaian:
                 </button>
                 <div class="collapse" id="collapsesoal2">
                   <div class="card card-body overflow-auto">
-                   Penyelesaian ketik disini
-                   <b class="text-end"> JAWABAN :  </b>
+                    Misal \(T=\begin{pmatrix}a\\b \end{pmatrix}\)
+                    maka
+                   \(\begin{align} A'&=T \circ A \\ \begin{pmatrix}3\\8 \end{pmatrix} &=\begin{pmatrix}a\\b \end{pmatrix}+\begin{pmatrix}2\\4 \end{pmatrix} \\ 
+                   \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}3\\8 \end{pmatrix} - \begin{pmatrix}2\\4 \end{pmatrix} \\
+                   \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}1\\4 \end{pmatrix}
+                   \end{align}\)
+                   Sehingga
+                   \(\begin{align} 
+                   \begin{pmatrix}x'\\y' \end{pmatrix} &=\begin{pmatrix}1\\4 \end{pmatrix}+\begin{pmatrix}1\\2 \end{pmatrix} \\
+                   &= \begin{pmatrix}2\\6 \end{pmatrix}
+                   \end{align}\)
+                   Jadi, bayangan titik (1, 2) adalah (2, 6)
+                   <b class="text-end"> JAWABAN : B </b>
                   </div>
                 </div>
                 <hr />
@@ -168,20 +190,27 @@
                 <input type="radio" name="soal3" value="0" />
                 \((-2,1) \)
                 <br>
-                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collpasesoal3" aria-expanded="false" aria-controls="collpasesoal3">
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collpasesoal3" aria-expanded="false" aria-controls="collpasesoal3" disabled>
                 Alternatif Penyelesaian:
                 </button>
                 <div class="collapse" id="collpasesoal3">
                   <div class="card card-body overflow-auto">
-                   Penyelesaian ketik disini
-                   <b class="text-end"> JAWABAN :  </b>
+                    Jika
+                    \((0,1) \overset{R}{\to} (1,0) \)
+                    \((1,0) \overset{R}{\to} (0,1) \)
+                    maka
+                    \(R \text{ merupakan pencerminan terhadap garis } y=x\)
+                    Sehingga
+                    \((-1,2) \overset{R_{y=x}}{\to} (2,-1) \)
+                    \(\text{Jadi bayangan titik }(-1,2) \text{ adalah } (2,-1) \)
+                  <b class="text-end"> JAWABAN : D </b>
                   </div>
                 </div>
                 <hr />
                 <!-- soal no no4 =================================================================================================-->
                 <li>Absis dari bayangan titik \((6,0) \) pada pencerminan terhadap garis \(x=a\) adalah . . .  </li>
                 </li>
-                <input type="radio" name="soal4" value="0" />
+                <input type="radio" name="soal4" value="10" id="soal4"/>
                 \(2a-6\)
                 <br />
                 <input type="radio" name="soal4" value="0" />
@@ -193,28 +222,33 @@
                 <input type="radio" name="soal4" value="0"  />
                 \(a+3 \)
                 <br />
-                <input type="radio" name="soal4" value="10" id="soal4">
+                <input type="radio" name="soal4" value="0" >
                 \(0 \)
                 <br>
-                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal4" aria-expanded="false" aria-controls="collapsesoal4">
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal4" aria-expanded="false" aria-controls="collapsesoal4" disabled>
                 Alternatif Penyelesaian:
                 </button>
                 <div class="collapse" id="collapsesoal4">
                   <div class="card card-body overflow-auto">
-                   Penyelesaian ketik disini
-                   <b class="text-end"> JAWABAN :  </b>
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}-1&0\\0&1 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix}+\begin{pmatrix}2(a)\\0 \end{pmatrix} \\ 
+                    &=\begin{pmatrix}-1&0\\0&1 \end{pmatrix}\begin{pmatrix}6\\0 \end{pmatrix}+\begin{pmatrix}2a\\0 \end{pmatrix} \\
+                    &= \begin{pmatrix}-6+2a\\0 \end{pmatrix}
+                    \end{align}\) <br>
+                    \(\text{Jadi, nilai absisnya adalah } 2a-6 \)
+                   <b class="text-end"> JAWABAN : A </b>
                   </div>
                 </div>
                 <hr />
                 <!-- soal no 5 ================================================================================================-->
                 <li>Pencerminan suatu titik terhadap garis \(x=3\) dilanjutkan pencerminan terhadap garis \(x=5\) maka bayangan titik \((3,2) \) adalah . . .  </li>
-                <input type="radio" name="soal5" value="10" id="soal5"/>
+                <input type="radio" name="soal5" value="0" />
                 \((2,3)\)
                 <br />
                 <input type="radio" name="soal5" value="0" />
                 \((3,6) \)
                 <br />
-                <input type="radio" name="soal5" value="0"   />
+                <input type="radio" name="soal5" value="10"  id="soal5" />
                 \((7,2) \)
                 <br />
                 <input type="radio" name="soal5" value="0"/>
@@ -235,13 +269,13 @@
                 <hr />
                 <!-- =====SOAL NO 6======================================================================= -->
                 <li>Bayangan titik dengan koordinat polar \((2,30^{\circ}) \) bila dicerminkan terhadap sumbu-Y adalah . . . </li>
-                <input type="radio" name="soal6" value="10" id="soal6" />
+                <input type="radio" name="soal6" value="0"  />
                 \((-2,150^{\circ}) \)
                 <br />
                 <input type="radio" name="soal6" value="0" />
                 \((-2,30^{\circ}) \)
                 <br />
-                <input type="radio" name="soal6" value="0" />
+                <input type="radio" name="soal6" value="10" id="soal6" />
                 \((2,120^{\circ}) \)
                 <br />
                 <input type="radio" name="soal6" value="0" />
@@ -265,10 +299,10 @@
                 <input type="radio" name="soal7" value="0" />
                 \(A''(8,5) \)
                 <br />
-                <input type="radio" name="soal7" value="0" />
+                <input type="radio" name="soal7" value="10" id="soal7" />
                 \(A''(10,1) \)
                 <br />
-                <input type="radio" name="soal7" value="10" id="soal7"/>
+                <input type="radio" name="soal7" value="0" />
                 \(A''(8,1) \)
                 <br />
                 <input type="radio" name="soal7" value="0"  />
@@ -330,7 +364,8 @@
                 \(\begin{pmatrix}0&1\\1&0 \end{pmatrix}\)
                 <br />
                 <input type="radio" name="soal9" value="10" id="soal9"/>
-                \(\begin{pmatrix}1&0\\0&-1 \end{pmatrix}\)       <br />
+                \(\begin{pmatrix}1&0\\0&-1 \end{pmatrix}\)       
+                <br />
                 <input type="radio" name="soal9" value="0" />
                 \(\begin{pmatrix}0&-1\\-1&0 \end{pmatrix}\)
                 <br>
@@ -346,7 +381,7 @@
                 <hr />
                 <!-- =====SOAL NO 10======================================================================= -->
                 <li>Titik \((-1,3) \) direfleksikan terhadap garis \(x=2 \) dilanjutkan oleh refleksi terhadap garis \(y=-x\). Koordinat bayangan akhir adalah . . . </li>
-                <input type="radio" name="soal10" value="10" id="soal10" />
+                <input type="radio" name="soal10" value="0"  />
                 \((-3,5) \)
                 <br />
                 <input type="radio" name="soal10" value="0" />
@@ -355,7 +390,7 @@
                 <input type="radio" name="soal10" value="0" />
                 \((-3,3) \)
                 <br />
-                <input type="radio" name="soal10" value="0" />
+                <input type="radio" name="soal10" value="10" id="soal10"/>
                 \((-3,-5) \)
                 <br />
                 <input type="radio" name="soal10" value="0" />
@@ -373,7 +408,7 @@
                 <hr />
 
                 <li>Titik \((6,-2)\) ketika direfleksikan terhadap garis \(x=k\) menghasilkan bayangan titik \((-10,-2) \). Koordinat bayangan titik \((3,-2)\) jika direfleksikan terhadap garis \(y=k\) adalah . . .  </li>
-                <input type="radio" name="soal11" value="10" id="soal11" />
+                <input type="radio" name="soal11" value="0" />
                 \((3,4) \)
                 <br />
                 <input type="radio" name="soal11" value="0" />
@@ -385,7 +420,7 @@
                 <input type="radio" name="soal11" value="0" />
                 \((3,-8) \)
                 <br />
-                <input type="radio" name="soal11" value="0" />
+                <input type="radio" name="soal11" value="10" id="soal11" />
                 \((-7,-2) \)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal11" aria-expanded="false" aria-controls="collapsesoal11">
@@ -403,10 +438,10 @@
                 <input type="radio" name="soal12" value="0" />
                 \(-2 \)
                 <br />
-                <input type="radio" name="soal12" value="0" />
+                <input type="radio" name="soal12" value="10" id="soal12"/>
                 \(-1 \)
                 <br />
-                <input type="radio" name="soal12" value="10" id="soal12"  />
+                <input type="radio" name="soal12" value="0"   />
                 \(0 \)
                 <br />
                 <input type="radio" name="soal12" value="0" />
@@ -433,10 +468,10 @@
                 <input type="radio" name="soal13" value="0" />
                 \(\begin{pmatrix}0&1\\-1&0 \end{pmatrix} \)
                 <br />
-                <input type="radio" name="soal13" value="10" id="soal13"/>
+                <input type="radio" name="soal13" value="0" />
                 \(\begin{pmatrix}0&-1\\-1&0 \end{pmatrix} \)
                 <br />
-                <input type="radio" name="soal13" value="0" />
+                <input type="radio" name="soal13" value="10" id="soal13"/>
                 \(\begin{pmatrix}-1&0\\0&-1 \end{pmatrix} \)
                 <br />
                 <input type="radio" name="soal13" value="0" />
@@ -484,10 +519,10 @@
                 \(P(x,y) \to P'(x',y') \) dengan \(\begin{pmatrix}x'\\y' \end{pmatrix}=\begin{pmatrix}a&b\\3&4 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix} \) <br>
                 Agar bayangan titik \((2,3)\) adalah \((8,18)\) dan bayangan titik \((-1,0)\) adalah \((-1,-3)\) oleh pemetaan diatas, maka nilai \(a\) dan \(b\) berturut-turut adalah . . .
                 </li>
-                <input type="radio" name="soal15" value="10" id="soal15" />
+                <input type="radio" name="soal15" value="0"  />
                 \(-1\) dan \(2\)
                 <br />
-                <input type="radio" name="soal15" value="0" />
+                <input type="radio" name="soal15" value="0" id="soal15"/>
                 \(1 \) dan \(2\)
                 <br />
                 <input type="radio" name="soal15" value="0" />
@@ -547,10 +582,10 @@
                 <input type="radio" name="soal17" value="0" />
                 \((-\frac{1}{2},6) \)
                 <br />
-                <input type="radio" name="soal17" value="0" />
+                <input type="radio" name="soal17" value="10" id="soal17"/>
                 \((2,1) \)
                 <br />
-                <input type="radio" name="soal17" value="10" id="soal17"/>
+                <input type="radio" name="soal17" value="0" />
                 \((-2,6)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal17" aria-expanded="false" aria-controls="collapsesoal17">
@@ -595,7 +630,7 @@
                 <input type="radio" name="soal19" value="0"  />
                 \(S''(3,2) \)                
                 <br />
-                <input type="radio" name="soal19" value="0" />
+                <input type="radio" name="soal19" value="10" id="soal19"/>
                 \(S''(1,2)\)
                 <br />
                 <input type="radio" name="soal19" value="0" />
@@ -604,7 +639,7 @@
                 <input type="radio" name="soal19" value="0" />
                 \(S''(5,8)\)
                 <br />
-                <input type="radio" name="soal19" value="10" id="soal19"/>
+                <input type="radio" name="soal19" value="0" />
                 \(S''(5,2)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal19" aria-expanded="false" aria-controls="collapsesoal19">
@@ -622,7 +657,7 @@
                 <input type="radio" name="soal20" value="0"  />
                 \(A'(0,-1)\), \(B'(-1,-5)\), dan \(C'(-3,-4)\)                
                 <br />
-                <input type="radio" name="soal20" value="0" />
+                <input type="radio" name="soal20" value="10" id="soal20" />
                 \(A'(-2,-3)\), \(B'(-3,-7)\), dan \(C'(-5,-6)\)
                 <br />
                 <input type="radio" name="soal20" value="0" />
@@ -631,7 +666,7 @@
                 <input type="radio" name="soal20" value="0" />
                 \(A'(-1,0)\), \(B'(-5,-1)\), dan \(C'(-4,-3)\)
                 <br />
-                <input type="radio" name="soal20" value="10" id="soal20"/>
+                <input type="radio" name="soal20" value="0" />
                 \(A'(-3,-2)\), \(B'(-7,-3)\), dan \(C'(-6,-5)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal20" aria-expanded="false" aria-controls="collapsesoal20">
@@ -649,7 +684,7 @@
                 <input type="radio" name="soal21" value="0"  />
                 \(A'(1,3)\), \(B'(-2,-4)\), dan \(C'(-1,5)\)                
                 <br />
-                <input type="radio" name="soal21" value="0" />
+                <input type="radio" name="soal21" value="10" id="soal21" />
                 \(A'(-1,-3)\), \(B'(2,4)\), dan \(C'(1,-5)\)
                 <br />
                 <input type="radio" name="soal21" value="0" />
@@ -658,7 +693,7 @@
                 <input type="radio" name="soal21" value="0" />
                 \(A'(-3,-1)\), \(B'(4,2)\), dan \(C'(5,1)\)
                 <br />
-                <input type="radio" name="soal21" value="10" id="soal21"/>
+                <input type="radio" name="soal21" value="0" />
                 \(A'(3,-1)\), \(B'(2,4)\), dan \(C'(1,-5)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal21" aria-expanded="false" aria-controls="collapsesoal21">
@@ -679,13 +714,13 @@
                 <input type="radio" name="soal22" value="0" />
                 \((-4,5)\)
                 <br />
-                <input type="radio" name="soal22" value="0" />
+                <input type="radio" name="soal22" value="10" id="soal22"/>
                 \((-5,4)\)
                 <br />
                 <input type="radio" name="soal22" value="0" />
                 \((-4,-5)\)
                 <br />
-                <input type="radio" name="soal22" value="10" id="soal22"/>
+                <input type="radio" name="soal22" value="0" />
                 \((-5,-4)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal22" aria-expanded="false" aria-controls="collapsesoal22">
@@ -700,7 +735,7 @@
                 <hr />
                 <!--===========================================================23===========================================================================  -->
                 <li>Ditentukan matriks transformasi \(T_1=\begin{pmatrix}1&-1\\1&-2 \end{pmatrix}\) dan \(T_2=\begin{pmatrix}0&-1\\1&0 \end{pmatrix}\). Hasil transformasi titik \((2,-1)\) terhadap \(T_1\) dilanjutkan \(T_2\) adalah . . . </li>
-                <input type="radio" name="soal23" value="0"  />
+                <input type="radio" name="soal23" value="10" id="soal23" />
                 \((-4,3)\)                
                 <br />
                 <input type="radio" name="soal23" value="0" />
@@ -712,7 +747,7 @@
                 <input type="radio" name="soal23" value="0" />
                 \((4,3)\)
                 <br />
-                <input type="radio" name="soal23" value="10" id="soal23"/>
+                <input type="radio" name="soal23" value="0" />
                 \((3,-4)\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal23" aria-expanded="false" aria-controls="collapsesoal23">
@@ -736,10 +771,10 @@
                 <input type="radio" name="soal24" value="0" />
                 \((10,2)\)
                 <br />
-                <input type="radio" name="soal24" value="0" />
+                <input type="radio" name="soal24" value="10" id="soal24"/>
                 \((-10,2)\)
                 <br />
-                <input type="radio" name="soal24" value="10" id="soal24"/>
+                <input type="radio" name="soal24" value="0" />
                 \(10,-2\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal24" aria-expanded="false" aria-controls="collapsesoal24">
@@ -757,7 +792,7 @@
                 <input type="radio" name="soal25" value="0"  />
                 \(5\)                
                 <br />
-                <input type="radio" name="soal25" value="0" />
+                <input type="radio" name="soal25" value="10" id="soal25"/>
                 \(10\)
                 <br />
                 <input type="radio" name="soal25" value="0" />
@@ -766,7 +801,7 @@
                 <input type="radio" name="soal25" value="0" />
                 \(20\)
                 <br />
-                <input type="radio" name="soal25" value="10" id="soal25"/>
+                <input type="radio" name="soal25" value="0" />
                 \(25\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal25" aria-expanded="false" aria-controls="collapsesoal25">
@@ -784,7 +819,7 @@
                 <input type="radio" name="soal26" value="0"  />
                 \(\begin{pmatrix}0&1\\1&0 \end{pmatrix}\)                
                 <br />
-                <input type="radio" name="soal26" value="0" />
+                <input type="radio" name="soal26" value="10" id="soal26"/>
                 \(\begin{pmatrix}0&1\\-1&0 \end{pmatrix}\)
                 <br />
                 <input type="radio" name="soal26" value="0" />
@@ -793,7 +828,7 @@
                 <input type="radio" name="soal26" value="0" />
                 \(\begin{pmatrix}1&0\\0&-1 \end{pmatrix}\)
                 <br />
-                <input type="radio" name="soal26" value="10" id="soal26"/>
+                <input type="radio" name="soal26" value="0"/>
                 \(\begin{pmatrix}-1&0\\0&1 \end{pmatrix}\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal26" aria-expanded="false" aria-controls="collapsesoal26">
@@ -814,13 +849,13 @@
                 <input type="radio" name="soal27" value="0" />
                 \(2x+3y=4\)
                 <br />
-                <input type="radio" name="soal27" value="0" />
+                <input type="radio" name="soal27" value="10" id="soal27" />
                 \(2x+3y=5\)
                 <br />
                 <input type="radio" name="soal27" value="0" />
                 \(2x+3y=6\)
                 <br />
-                <input type="radio" name="soal27" value="10" id="soal27"/>
+                <input type="radio" name="soal27" value="0" />
                 \(2x+3y=7\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal27" aria-expanded="false" aria-controls="collapsesoal27">
@@ -862,7 +897,7 @@
                 <hr />
                 <!--===========================================================29===========================================================================  -->
                 <li>Persamaan bayangan garis \(y=2x-3\) karena refleksi terhadap garis \(y=x\) adalah . . . </li>
-                <input type="radio" name="soal29" value="0"  />
+                <input type="radio" name="soal29" value="10" id="soal29" />
                 \(x-2y+3=0\)                
                 <br />
                 <input type="radio" name="soal29" value="0" />
@@ -874,8 +909,8 @@
                 <input type="radio" name="soal29" value="0" />
                 \(x+2y-3=0\)
                 <br />
-                <input type="radio" name="soal29" value="10" id="soal29"/>
-                \(-x+2y-3=0\)
+                <input type="radio" name="soal29" value="0" />
+                \(-x-2y-3=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal29" aria-expanded="false" aria-controls="collapsesoal29">
                 Alternatif Penyelesaian:
@@ -895,13 +930,13 @@
                 <input type="radio" name="soal30" value="0" />
                 \(3x+2y+8=0\)
                 <br />
-                <input type="radio" name="soal30" value="0" />
+                <input type="radio" name="soal30" value="10" id="soal30"/>
                 \(3x+2y-8=0\)
                 <br />
                 <input type="radio" name="soal30" value="0" />
                 \(2x-3y-8=0\)
                 <br />
-                <input type="radio" name="soal30" value="10" id="soal30"/>
+                <input type="radio" name="soal30" value="0" />
                 \(2x+3y-8=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal30" aria-expanded="false" aria-controls="collapsesoal30">
@@ -979,10 +1014,10 @@
                 <input type="radio" name="soal33" value="0" />
                 \(4x^2+y^2=4\)
                 <br />
-                <input type="radio" name="soal33" value="0" />
+                <input type="radio" name="soal33" value="10"  id="soal33"/>
                 \(x^2+4y^2=4\)
                 <br />
-                <input type="radio" name="soal33" value="10" id="soal33"/>
+                <input type="radio" name="soal33" value="0"/>
                 \(4x^2+2y^2=1\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal33" aria-expanded="false" aria-controls="collapsesoal33">
@@ -1006,10 +1041,10 @@
                 <input type="radio" name="soal34" value="0" />
                 \(x^2+y^2-4x-8y-20=0\)
                 <br />
-                <input type="radio" name="soal34" value="0" />
+                <input type="radio" name="soal34" value="10" id="soal34" />
                 \(x^2+y^2-4x-8y-80=0\)
                 <br />
-                <input type="radio" name="soal34" value="10" id="soal34"/>
+                <input type="radio" name="soal34" value="0" />
                 \(x^2+y^2-4x-8y+20=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
@@ -1027,7 +1062,7 @@
                 <input type="radio" name="soal35" value="0"  />
                 \(8y+9x+25=0\)                
                 <br />
-                <input type="radio" name="soal35" value="0" />
+                <input type="radio" name="soal35" value="10" id="soal35"/>
                 \(8y-9x+25=0\)
                 <br />
                 <input type="radio" name="soal35" value="0" />
@@ -1036,7 +1071,7 @@
                 <input type="radio" name="soal35" value="0" />
                 \(8y+9x-7=0\)
                 <br />
-                <input type="radio" name="soal35" value="10" id="soal35"/>
+                <input type="radio" name="soal35" value="0" />
                 \(-8y-9x+25=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal35" aria-expanded="false" aria-controls="collapsesoal35">
@@ -1054,7 +1089,7 @@
                 <input type="radio" name="soal36" value="0"  />
                 \(x^2+y^2-2x-8y+13=0\)                
                 <br />
-                <input type="radio" name="soal36" value="0" />
+                <input type="radio" name="soal36" value="10" id="soal36" />
                 \(x^2+y^2-2x+8y+13=0\)
                 <br />
                 <input type="radio" name="soal36" value="0" />
@@ -1063,7 +1098,7 @@
                 <input type="radio" name="soal36" value="0" />
                 \(x^2+y^2+2x+8y+13=0\)
                 <br />
-                <input type="radio" name="soal36" value="10" id="soal36"/>
+                <input type="radio" name="soal36" value="0" />
                 \(x^2+y^2+2x+2y+13=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal36" aria-expanded="false" aria-controls="collapsesoal36">
@@ -1078,8 +1113,8 @@
                 <hr />
                 <!--===========================================================37===========================================================================  -->
                 <li>Persamaan bayangan garis \(2y-5x-10=0\) oleh rotasi \([O,90^{\circ}]\) dilanjutkan refleksi terhadap garis \(y=-x\) adalah . . . </li>
-                <input type="radio" name="soal37" value="0"  />
-                \(5y+2x+10=0\)                
+                <input type="radio" name="soal37" value="10" id="soal37" />
+                \(5y+2x-10=0\)                
                 <br />
                 <input type="radio" name="soal37" value="0" />
                 \(5y-2x-10=0\)
@@ -1090,7 +1125,7 @@
                 <input type="radio" name="soal37" value="0" />
                 \(2y+5x+10=0\)
                 <br />
-                <input type="radio" name="soal37" value="10" id="soal37"/>
+                <input type="radio" name="soal37" value="0" />
                 \(2y-5x+10=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse37" aria-expanded="false" aria-controls="collapse37">
@@ -1168,10 +1203,10 @@
                 <input type="radio" name="soal40" value="0" />
                 \(5x+2y-9=0\)
                 <br />
-                <input type="radio" name="soal40" value="0" />
+                <input type="radio" name="soal40" value="10" id="soal40"/>
                 \(5x-2y+9=0\)
                 <br />
-                <input type="radio" name="soal40" value="10" id="soal40"/>
+                <input type="radio" name="soal40" value="0" />
                 \(2x-5y-9=0\)
                 <br>
                 <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal40" aria-expanded="false" aria-controls="collapsesoal40">
@@ -1234,29 +1269,29 @@
         <div class="row">
           <div class="col">
             <ol>
-              <li>E</li>
-              <li>A</li>
-              <li>D</li>
-              <li>E</li>
-              <li>A</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
             </ol>
           </div>
           <div class="col">
             <ol start="6">
-              <li>A</li>
-              <li>C</li>
-              <li>B</li>
-              <li>D</li>
-              <li>A</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
             </ol>
           </div>
           <div class="col">
             <ol start="11">
-              <li>A</li>
-              <li>C</li>
-              <li>C</li>
-              <li>E</li>
-              <li>A</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
             </ol>
           </div>
         </div>
