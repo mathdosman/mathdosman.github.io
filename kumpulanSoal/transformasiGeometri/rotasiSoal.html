@@ -113,6 +113,16 @@
                 <br />
                 <input type="radio" name="soal1" value="0"/>
                 \((3,-5) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal1" aria-expanded="false" aria-controls="collapsesoal1">
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal1">
+                  <div class="card card-body overflow-auto">
+                  Penyelesaian ketik disini
+                  <b class="text-end"> JAWABAN :  </b>
+                  </div>
+                </div>
                 <hr />
                 <!--========================= soal no 2 ===========================================================================-->
                 <li>Titik \(A (8 , -3)\) dirotasikan sejauh \(90^{\circ}\) terhadap titik pusat \(O (0 , 0)\) searah jarum jam. Bayangan titik \(A\) adalah . . .</li>
@@ -130,6 +140,16 @@
                 <br />
                 <input type="radio" name="soal2" value="0" />
                 \((8,-3) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal2" aria-expanded="false" aria-controls="collapsesoal2">
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal2">
+                  <div class="card card-body overflow-auto">
+                  Penyelesaian ketik disini
+                  <b class="text-end"> JAWABAN :  </b>
+                  </div>
+                </div>
                 <hr />
                 <!--================================================== soal no 3 ======================================================-->
                 <li>Persamaan bayangan kurva \(3x + 5y = 15\) jika dirotasikan sebesar \(90^{\circ}\) searah jarum jam dengan titik pusat rotasi \(O(0, 0)\) adalah . . .</li>
@@ -147,6 +167,29 @@
                 <br />
                 <input type="radio" name="soal3" value="0" />
                 \(3y+15=-15 \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal3" aria-expanded="false" aria-controls="collapsesoal3">
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal3">
+                  <div class="card card-body overflow-auto">
+                  \(\begin{align}
+                  \begin{pmatrix}x'\\y'\end{pmatrix} &= \begin{pmatrix}\cos (-90⁰) & -\sin (-90⁰) \\ \sin (-90⁰)& \cos (-90⁰) \end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix} \\
+                  &= \begin{pmatrix}0&1\\-1&0 \end{pmatrix}\begin{pmatrix}x\\y \end{pmatrix} \\
+                  \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}y\\-x \end{pmatrix}
+                  \end{align}\)
+                  Sehingga
+                  \(\begin{align}y&=x' \\ x&=-y' \end{align}\)
+                  <br>
+                  \(\begin{align} 3x+5y&=15 \\
+                  3(-y')+5(x')&=15 \\
+                  -3y'+5x'&=15
+                  \end{align}\)
+
+                  Jadi bayangan garis tersebut adalah \(-3y+5x=15\)
+                  <b class="text-end"> JAWABAN : B </b>
+                  </div>
+                </div>
                 <hr />
                 <!-- soal no no4 =================================================================================================-->
                 <li>Bayangan titik \(A\) oleh rotasi \(R(0,45^{\circ})\) adalah \((-√2,√2)\). Koordinat titik \(A\) adalah . . . </li>
@@ -163,12 +206,29 @@
                 <input type="radio" name="soal4" value="0"  />
                 \((-2,0) \)
                 <br />
-                <input type="radio" name="soal4" value="0" >
+                <input type="radio" name="soal4" value="0" />
                 \((2,-2) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal4" aria-expanded="false" aria-controls="collapsesoal4">
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal4">
+                  <div class="card card-body overflow-auto">
+                    Titik bayangan jika diputar dengan arah yang berbeda dari dengan rotasi awal maka akan mendapatkan titik asal.
+                  \(\begin{align}
+                  \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}\cos (-45⁰) & -\sin (-45⁰) \\ \sin (-45⁰)& \cos (-45⁰) \end{pmatrix}\begin{pmatrix}-\sqrt{2} \\ \sqrt{2} \end{pmatrix} \\
+                  &= \begin{pmatrix}\frac{1}{2}\sqrt{2}&\frac{1}{2}\sqrt{2}\\-\frac{1}{2}\sqrt{2}&\frac{1}{2}\sqrt{2} \end{pmatrix}\begin{pmatrix}-\sqrt{2}\\ \sqrt{2} \end{pmatrix} \\
+                  &= \begin{pmatrix}-4\\-3 \end{pmatrix}+\begin{pmatrix}2\\3 \end{pmatrix} \\ 
+                  &= \begin{pmatrix}-1+1\\1+1 \end{pmatrix} \\
+                  &= \begin{pmatrix}0\\2 \end{pmatrix}
+                  \end{align}\)
+                  <b class="text-end"> JAWABAN : C </b>
+                  </div>
+                </div>
                 <hr />
                 <!-- soal no 5 ================================================================================================-->
                 <li>Titik \(B(5,-1)\) dirotasikan terhadap titik \(P(2,3)\) sejauh \(90⁰\) searah putaran jam. Bayangan titik B tersebut adalah . . . </li>
-                 <input type="radio" name="soal5" value="0" />
+                <input type="radio" name="soal5" value="0" />
                 \((2,0)\)
                 <br />
                 <input type="radio" name="soal5" value="0" />
@@ -180,9 +240,23 @@
                 <input type="radio" name="soal5" value="10"  />
                 \((-2,0) \)
                 <br />
-                <input type="radio" name="soal5" value="0" >
-                \((2,-2) \) />
-                \(E\)
+                <input type="radio" name="soal5" value="0" />
+                \((2,-2) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal5" aria-expanded="false" aria-controls="collapsesoal5">
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal5">
+                  <div class="card card-body overflow-auto">
+                  \(\begin{align}
+                  \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}\cos (-90⁰) & -\sin (-90⁰) \\ \sin (-90⁰)& \cos (-90⁰) \end{pmatrix}\begin{pmatrix}5-2\\-1-3 \end{pmatrix}+\begin{pmatrix}2\\3 \end{pmatrix} \\
+                  &= \begin{pmatrix}0&1\\-1&0 \end{pmatrix}\begin{pmatrix}3\\-4 \end{pmatrix}+\begin{pmatrix}2\\3 \end{pmatrix} \\
+                  &= \begin{pmatrix}-4\\-3 \end{pmatrix}+\begin{pmatrix}2\\3 \end{pmatrix} \\ 
+                  &= \begin{pmatrix}-2\\0 \end{pmatrix}
+                  \end{align}\)
+                  <b class="text-end"> JAWABAN : D </b>
+                  </div>
+                </div>
                 <hr />
                 <!-- =====SOAL NO 6======================================================================= -->
                 <li>Jika garis \(x - 2y = 5\) diputar sejauh \(90⁰\) terhadap titik \((2,4)\) berlawanan arah putaran jam, maka persamaan bayangannya adalah . . .</li>
