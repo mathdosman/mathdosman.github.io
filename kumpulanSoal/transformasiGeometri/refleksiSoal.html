@@ -32,7 +32,7 @@ gtag('config', 'G-WWKYNJM30L');
 </head>
 <body id="home">
 <!-- navbar start -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
     <div class="container">
         <a href="../../"><img src="/home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
         <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
@@ -61,12 +61,16 @@ gtag('config', 'G-WWKYNJM30L');
     <!-- navbar end -->
 
 <!-- START FORM KUIS -->
-<section id="kontak" style="padding-bottom: 5rem;">
-    <div class="container">
+<section id="kontak">
+    <div class="container p-2">
         <div class="row justify-content-center">
-            <div class="col-md-9" style="padding-top: 5rem;">
+            <div class="col-md-9 p-2">
             <h2 class="text-center">Latihan Soal Refleksi</h2>
             <p class="text-center fst-italic"> Math_Dosman</p>
+                    <div class="bg-danger text-center text-light sticky-top">
+                    BATAS WAKTU:
+                    <p id="demo" class="fs-3 fw-bold"></p>
+                    </div>
             <form name="translasi01-form">
                 <div class="mb-3">
                     <label for="materi" class="form-label"><b>Materi</b></label>
@@ -550,8 +554,8 @@ gtag('config', 'G-WWKYNJM30L');
 </div>
             </form>
         </div>
-            <div class="col-md-3 d-block pb-2">
-                <div class="list-group sticky-sm-top" style="padding-top: 5rem">
+            <div class="col-md-3 d-block p-2">
+                <div class="list-group sticky-sm-top">
               <a href="../transformasiGeometri/" class="list-group-item list-group-item-action active" aria-current="true"> Transformasi Geometri </a>
               <a href="../transformasiGeometri/translasisoal.html" class="list-group-item list-group-item-action">Latihan Soal Translasi</a>
               <a href="../transformasiGeometri/refleksiSoal.html" class="list-group-item list-group-item-action">Latihan Soal Refleksi</a>
@@ -719,6 +723,38 @@ gtag('config', 'G-WWKYNJM30L');
             .catch((error) => console.error('Error!', error.message));
         });
     </script>
+    <!-- PERHITUNGAN WAKTU -->
+    <script>
+        // Mengatur waktu akhir perhitungan mundur
+        var countDownDate = new Date("Oct 23, 2022 23:59:59").getTime();
+        
+        // Memperbarui hitungan mundur setiap 1 detik
+        var x = setInterval(function() {
+        
+          // Untuk mendapatkan tanggal dan waktu hari ini
+          var now = new Date().getTime();
+            
+          // Temukan jarak antara sekarang dan tanggal hitung mundur
+          var distance = countDownDate - now;
+            
+          // Perhitungan waktu untuk hari, jam, menit dan detik
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Keluarkan hasil dalam elemen dengan id = "demo"
+          document.getElementById("demo").innerHTML = days + " hari, " + hours + " jam, "
+          + minutes + " menit, " + seconds + " detik. ";
+            
+          // Jika hitungan mundur selesai, tulis beberapa teks 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+        <!-- END PERHITUNGAN WAKTU -->
     <!-- footer start -->
     <footer class="bg-primary text-center text-white d-flex justify-content-center">
         <p>
